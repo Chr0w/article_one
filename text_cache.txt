@@ -1,0 +1,18 @@
+
+
+It is tempting to rely on some implementation of Simultaneous Localization and Mapping (SLAM) [ref], but we and others 
+[Tipaldi et al. (2013), Lifelong localization in changing environments] argue that it is the wrong use-case, for several reasons:
+
+\begin{itemize}
+    \item SLAM excels at mapping unseen environments, but for indoor industrial use-cases, the static environment is already known.
+    \item Graph-based SLAM risks corrupting the map by false data associations.
+    \item Even when functioning correctly, the inherent uncertainty will cause SLAM to adjust the position of static features.
+\end{itemize}
+
+Indeed, as shown by Kaveti et al. [ref.number, p1] \textit{"Robustness in Simultaneous Localization and Mapping (SLAM) remains one of the key challenges for the real-world deployment of autonomous systems. SLAM research has seen significant progress 
+in the last two and a half decades, yet many state-of-the-art (SOTA) algorithms still struggle to perform reliably in real-world environments."} 
+[Challenges of Indoor SLAM: A multi-modal multi-floor dataset for SLAM evaluation]
+
+We argue that an optimal solution for lifelong robust localization in indoor changing environments lies in between the two extremes of having a static world assumption, and updating the map freely.
+
+

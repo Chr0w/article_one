@@ -11,7 +11,7 @@
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
 
-\title{Quantifying map-environment divergences for robot localization performance estimation\\
+\title{Environment Similarity Index: Quantifying map-environment divergences for robot localization performance estimation and improvement\\
 \thanks{Identify applicable funding agency here. If none, delete this.}
 }
 
@@ -19,25 +19,25 @@
 \IEEEauthorblockA{\textit{University of Southern Denmark} \\
 \textit{The Maersk Mc-Kinney Moller Institute}\\
 Odense, Denmark \\
-email address or ORCID}
+crda@mir-robots.com}
 \and
 \IEEEauthorblockN{Daniel Suvei}
 \IEEEauthorblockA{\textit{Traffic and Navigation Team} \\
 \textit{Teradyne Robotics}\\
 Odense, Denmark \\
-email address or ORCID}
+dsu@mir-robots.com}
 \and
 \IEEEauthorblockN{Leon Bodenhagen}
 \IEEEauthorblockA{\textit{University of Southern Denmark} \\
 \textit{The Maersk Mc-Kinney Moller Institute}\\
 Odense, Denmark \\
-email address or ORCID}
+lebo@mmmi.sdu.dk}
 }
 
 \maketitle
 
 \begin{abstract}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+Todo
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -45,16 +45,44 @@ Localization, Mapping, AMR
 \end{IEEEkeywords}
 
 \section{Introduction}
-hej med dig 
+Localization is a critical ability needed by Autonomous Mobile Robots (AMRs) in order to execute missions successfully. 
+The gold standard for indoor industrial localization has for a long time been Adaptive Monte Carlo Localization (AMCL) [ref], typically used with 2D laser scanners.
+It is multi-modal, robust to noise and outliers, and well suited for non-linear systems. However, it assumes that the environment is static. 
+Dynamic objects that move while being observed will only briefly obscure the static environment
+behind them, and in most cases AMCL is robust to this. It is also straight-forward to detect and filter out moving objects.
+Transient objects on the other hand, such as pallets, boxes, bins, etc, 
+pose a bigger challenge. If the majority of the environment does not change, AMCL is very reliable, but when the changes become too great, the particle filter cannot converge, 
+and its performance degrades rapidly [ref]. 
 
-\subsection{If needed}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+A natural question to ask is therefore: How well does the environment match the map? What has been added and what has been removed?
+It is hyopthesized that such a score or index of map-environment simiilarity could be used as a predictor of AMCL's performance in changing environments, and could 
+be used to the performance of AMCL by tuning its parameters dynamically.
+However, to the best of our knowledge, no such score or index has been proposed or used in the literature. 
+
+\subsection{Contribution}
+This is the main contribution of this paper. We propose the Environment Similarity Index (ESI): An index that quantifies how well the currently observed environment matches the map.
+We also show how the ESI correlates to changes in the environment, both on simulated and real-world data, and how these changes impacts AMCL's performance. 
+In addition, we show how the ESI can be used by a user to easily identify areas in their site that have changed since mapping, and therefore may increase localiztion errors. 
+Finally, we show how the ESI can be used to improve AMCL's performance by using it to dynamically tune AMCL's parameters. [be more precise here when i know which]
+
+\begin{figure}[!t]
+    \centerline{\includegraphics[width=\columnwidth]{figures/figure_1_esi_example.png}}
+    \caption{Example of a figure caption.}
+    \label{fig1}
+\end{figure}
+
 
 \section{Related Work}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+- Bayes filtering / Probabilistic map update
+- Scan-BIM divergences
+- Occupancy grid vs feature maps
+- 
+
 
 \section{Methodology}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+abc
+- Should I include a section about computaitonal load?
+
 
 \section{Experiments}
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
@@ -62,7 +90,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 \section{Conclusions}
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 
-\section{Future work}
+\section{Limitations and Future work}
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 
 

@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1765463734 "/home/mircrda/Documents/article_one/main.tex" "main.pdf" "main" 1765463734
+["pdflatex"] 1765895539 "/home/mircrda/article_one/main.tex" "main.pdf" "main" 1765895540
   "/etc/texmf/web2c/texmf.cnf" 1711097219 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/mircrda/Documents/article_one/main.tex" 1765463733 9781 e85365f91ee4101c20f8978af3a45672 ""
+  "/home/mircrda/article_one/main.tex" 1765895540 11351 4f9f3b72ee482eac0b2704ac0cbd5ec3 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1136768653 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -74,8 +74,9 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1765463280 2801067 3b82cb4eaf8ea04deca5d868c6662db7 ""
   "IEEEtran.cls" 1765457000 281957 5b2e4fa15b0f7eabb840ebf67df4c0f7 ""
   "fig1.png" 1765457000 4535 3b4c70b1b9361fad686e8d234c8fe506 ""
-  "main.aux" 1765463734 2130 2dd07d5c56fc827c365f6ad521409dc2 "pdflatex"
-  "main.tex" 1765463733 9781 e85365f91ee4101c20f8978af3a45672 ""
+  "figures/figure_1_esi_example.png" 1765891129 114226 4f6a8b72f69d1323a3c3666e5a6f03e0 ""
+  "main.aux" 1765895540 2304 13c5f716557fda1a6e753d012d07d962 "pdflatex"
+  "main.tex" 1765895540 11351 4f9f3b72ee482eac0b2704ac0cbd5ec3 ""
   (generated)
   "main.aux"
   "main.log"
