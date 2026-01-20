@@ -1,0 +1,19 @@
+Robust, lifelong localization is a fundamental ability for all Autonomous Mobile Robots (AMRs). For many years, the gold standard to achieve this has been to use some variation 
+of Monte Carlo Localization, as it strikes a good balance between cost and performance. It can perform global localization, and is multi-modal. For indoor industrial applications, 
+it works well in many cases. It does however, have a major drawback: It assumes the environment is static. As soon as it' surroundings have changed too much, the particle filter 
+diverges and fails, because it does not update it's representation. Making a system that is robust to change is still an ongoing challenge (ref). Some would argue that 
+Simultaneous Localization and Mapping (SLAM) is the best way to solve this; but SLAM suffers in reliability. No system is perfect, and sooner or later, an error will find its way 
+into the system. The resulting erroneous pose will propagate into the resulting map, reducing accuracy or cause a complete loss of localization. Since there is no ground truth 
+to inform the system when the errors was introduced, it is impossible to recover the last valid map state. Therefore, this paper suggests a different approach; instead of updating 
+the map, the environment is analysed to detect changes between what is seen and what is expected. This info is then used to alter the behavior of the localization system 
+- in this case, adaptive MCL (AMCL). To do this, we need a metric that defines how similar (or different) the observed environment is from its representation (the map). 
+However; to the best of our knowledge, no such metric exists. We hypothesize that such a metric can be used to infer the performance of any given localization module that takes 
+the static world assumption, and that it can be used online to adjust its behaviour, thereby reducing the pose error. Furthermore, it can be used to generate a heatmap of 
+an environment, which can then be interpreted by a human operator, in order to identify local regions of high divergence. These are the contributions of this paper:
+
+We propose the Environment Similarity Index (ESI): An index that quantifies how well the currently observed environment matches the map.
+We also show how the ESI correlates to changes in the environment, both on simulated and real-world data, and how these changes impacts AMCL's performance. 
+In addition, we show how the ESI can be used by a user to easily identify areas in their site that have changed since mapping, and therefore may increase localiztion errors. 
+Finally, we show how the ESI can be used to improve AMCL's performance by using it to dynamically tune AMCL's parameters.
+
+

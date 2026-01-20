@@ -1,0 +1,55 @@
+In this section, we describe the two experiments designed demonstrate how the ESI can be used to:
+\begin{itemize} 
+\item Quantify and visualize changes in the environment, and to what degree it accurately reflects these changes.
+\item Estimate and predict AMCL's performance in rapidly changing environments.
+\item Reduce AMCL's pose estimation error in rapidly changing environments by dynamically tuning its parameters.
+\end{itemize}
+
+\subsection{Real-world experiment} 
+To demonstrate that the ESI works on a real robot in a real enviroment, and that it can be used to visualize changes in it, we used a MiR100 AMR as the platform.
+The venue is the production hall of a packaging and labeling company. It is chosen because it represents the type of environment where AMCL often struggles;
+it is constantly developing, and most of the time, the the majority of what the robot is able to see consists of transient objects, as seen in Figure X.
+\subsubsection{Setup} A small section of the hall is mapped, using the native mapping functionality (based on ROS1 cartographer). We placed two waypoints, Start and Finish.
+The task of the robot is simply to move from Start to Finish. In order avoid disrupting their production, instead of moving the items around, we first recorded the map,
+and then gradually edit the map manually. This will create the same map-environment disagreements. The robot will be tested in four scenarios: 1) No, 2) light, 3) moderate 
+and 4) severe changes. Each scenario will be executed 5 times, and the ESI recorded for all runs. When the robot reaches the end, its pose error is obtained from a reference
+coordinate system on the floor. 
+\subsubsection{Results}
+
+\begin{table}[h]
+\label{abc} % ?
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+\hline
+& \multicolumn{2}{c|}{\textbf{Initial run}} & \multicolumn{2}{c|}{\textbf{Light changes}} & \multicolumn{2}{c|}{\textbf{Moderate changes}} & \multicolumn{2}{c|}{\textbf{Significant changes}} \\
+\hline
+& \textbf{pos [mm]} & \textbf{yaw [deg]} & \textbf{pos [mm]} & \textbf{yaw [deg]} & \textbf{pos [mm]} & \textbf{yaw [deg]} & \textbf{pos [mm]} & \textbf{yaw [deg]} \\
+\hline
+\textbf{Std. dev.} & 25.066 & 2.683 & 19.46 & 1.140 & 20.526 & 1.000 & N/A & N/A \\
+\hline
+\textbf{RMSE} & 22.41 & 2.400 & 17.464 & 2.070 & 21.100 & 2.375 & N/A & N/A \\
+\hline
+\textbf{ESI mean} & \multicolumn{2}{c|}{0.942} & \multicolumn{2}{c|}{0.641} & \multicolumn{2}{c|}{0.463} & \multicolumn{2}{c|}{0.219} \\
+\hline
+\textbf{ESI std. dev.} & \multicolumn{2}{c|}{0.044} & \multicolumn{2}{c|}{0.122} & \multicolumn{2}{c|}{0.100} & \multicolumn{2}{c|}{0.087} \\
+\hline
+\textbf{ESI Range} & \multicolumn{2}{c|}{0.700 - 1.000} & \multicolumn{2}{c|}{0.341 - 0.985} & \multicolumn{2}{c|}{0.192 - 0.758} & \multicolumn{2}{c|}{0.037 - 0.436} \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+
+
+
+\begin{figure}[H]
+    \centerline{\includegraphics[width=\columnwidth]{figures/schur_img_1.png}}
+    \caption{Example of a figure caption.}
+    \label{fig2}
+\end{figure}
+
+
+
+\subsection{Simulation experiment}
+...
+

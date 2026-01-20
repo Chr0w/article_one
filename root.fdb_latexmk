@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1768912900 "/home/mircrda/article_one/root.tex" "root.pdf" "root" 1768912901
+["pdflatex"] 1768921294 "/home/mircrda/article_one/root.tex" "root.pdf" "root" 1768921295
   "/etc/texmf/web2c/texmf.cnf" 1711097219 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/mircrda/article_one/root.tex" 1768912899 22391 0b6c7c62b0c8eaf4c901cffb1b2d0e11 ""
+  "/home/mircrda/article_one/root.tex" 1768921294 3051 ed3947868fffdadac46722e7c2bf4745 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc" 1422827479 2083 60e36f8eac802fcaf19eabe2633b406e ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -106,6 +106,7 @@
   "/usr/share/texlive/texmf-dist/tex/latex/mathtools/empheq.sty" 1585083035 46840 5d1bd8b17a285b97e58ae6cb634d6305 ""
   "/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty" 1643838029 59397 1bfeb7c4239ba9206737fca9cf861c65 ""
   "/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty" 1616101747 5582 a43dedf8e5ec418356f1e9dfe5d29fc3 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty" 1615845910 6149 2398eec4faa1ee24ff761581e580ecf1 ""
   "/usr/share/texlive/texmf-dist/tex/latex/newtx/lmsntxsy.fd" 1634244313 1140 ee5963b0c88b5c4f92fed61a27034b79 ""
   "/usr/share/texlive/texmf-dist/tex/latex/newtx/lmxntxexx.fd" 1471383769 549 70a2497c311fc8b19acb02f7607eb4e9 ""
   "/usr/share/texlive/texmf-dist/tex/latex/newtx/newtxmath.sty" 1640468671 139753 2a4fd176b2d0945a281323e3e423847c ""
@@ -129,8 +130,17 @@
   "figures/figure_1_esi_example.png" 1768910160 114226 4f6a8b72f69d1323a3c3666e5a6f03e0 ""
   "figures/schur_img_1.png" 1768910160 9076519 a95b80ab9a1850a4b5d3cbd66f8f441d ""
   "ieeeconf.cls" 1768910773 202167 7b37f8353df61c9733ed46143eff807a ""
-  "root.aux" 1768912901 2734 3fe881df108c45eff964847634570e8e "pdflatex"
-  "root.tex" 1768912899 22391 0b6c7c62b0c8eaf4c901cffb1b2d0e11 ""
+  "root.aux" 1768921295 2379 f02da7bbb1e38237540623d8a35dedd9 "pdflatex"
+  "root.tex" 1768921294 3051 ed3947868fffdadac46722e7c2bf4745 ""
+  "text/abstract.tex" 1768913791 783 3a352ae95bae594900699bc5cae8f270 ""
+  "text/conclusions.tex" 1768913741 3 2f43b42fd833d1e77420a8dae7419000 ""
+  "text/experiments.tex" 1768921231 3062 d9161d62f1603311f550ed419d57014b ""
+  "text/funding_and_author_info.tex" 1768917951 692 2338951419654d38f3b0ba363b7a2837 ""
+  "text/intro.tex" 1768917951 2695 7259bd3e13b00a9352725d654e510541 ""
+  "text/limitations_and_future_work.tex" 1768915900 3 2f43b42fd833d1e77420a8dae7419000 ""
+  "text/methodology.tex" 1768913447 6564 9f81e5947f0cc6b8b0d8c9db533bb8c3 ""
+  "text/references.tex" 1768913536 5250 a979d91462a0c77a4b7ac798fae87e48 ""
+  "text/related_work.tex" 1768913468 103 36f2a74d84b16e43c6008c0e193dcf24 ""
   (generated)
   "root.aux"
   "root.log"
