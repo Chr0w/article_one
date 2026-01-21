@@ -16,31 +16,28 @@ and 4) severe changes. Each scenario will be executed 5 times, and the ESI recor
 coordinate system on the floor. 
 \subsubsection{Results}
 
-\begin{table}[h]
-\label{abc} % ?
-\begin{center}
-\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
-\hline
-& \multicolumn{2}{c|}{\textbf{Initial run}} & \multicolumn{2}{c|}{\textbf{Light changes}} & \multicolumn{2}{c|}{\textbf{Moderate changes}} & \multicolumn{2}{c|}{\textbf{Significant changes}} \\
-\hline
-& \textbf{pos [mm]} & \textbf{yaw [deg]} & \textbf{pos [mm]} & \textbf{yaw [deg]} & \textbf{pos [mm]} & \textbf{yaw [deg]} & \textbf{pos [mm]} & \textbf{yaw [deg]} \\
-\hline
-\textbf{Std. dev.} & 25.066 & 2.683 & 19.46 & 1.140 & 20.526 & 1.000 & N/A & N/A \\
-\hline
-\textbf{RMSE} & 22.41 & 2.400 & 17.464 & 2.070 & 21.100 & 2.375 & N/A & N/A \\
-\hline
-\textbf{ESI mean} & \multicolumn{2}{c|}{0.942} & \multicolumn{2}{c|}{0.641} & \multicolumn{2}{c|}{0.463} & \multicolumn{2}{c|}{0.219} \\
-\hline
-\textbf{ESI std. dev.} & \multicolumn{2}{c|}{0.044} & \multicolumn{2}{c|}{0.122} & \multicolumn{2}{c|}{0.100} & \multicolumn{2}{c|}{0.087} \\
-\hline
-\textbf{ESI Range} & \multicolumn{2}{c|}{0.700 - 1.000} & \multicolumn{2}{c|}{0.341 - 0.985} & \multicolumn{2}{c|}{0.192 - 0.758} & \multicolumn{2}{c|}{0.037 - 0.436} \\
-\hline
-\end{tabular}
-\end{center}
-\end{table}
 
-
-
+\begin{table}[!h]
+    \begin{center}
+    \caption{\footnotesize{ESI results for the real-world experiment. 1) No changes, 2) Light changes, 3) Moderate changes, 4) Significant changes. Units for rows with a * is \textnormal{[mm]} and \textnormal{[°]}.}}
+    \adjustbox{width=\textwidth/2,center}{%
+    \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+    \hline
+    \textbf{Scenario} & \multicolumn{2}{c|}{\textbf{1})} & \multicolumn{2}{c|}{\textbf{2)}} & \multicolumn{2}{c|}{\textbf{3)}} & \multicolumn{2}{c|}{\textbf{4)}} \\
+    \hline
+    \textbf{* Pose RMSE} & 22.4 & 2.4 & 17.5 & 2.1 & 21.1 & 2.4 & N/A & N/A \\
+    \hline
+    \textbf{* Pose Std. dev.} & 25.1 & 2.7 & 19.5 & 1.1 & 20.5 & 1.0 & N/A & N/A \\
+    \hline
+    \textbf{ESI mean} & \multicolumn{2}{c|}{0.94} & \multicolumn{2}{c|}{0.64} & \multicolumn{2}{c|}{0.46} & \multicolumn{2}{c|}{0.22} \\
+    \hline
+    \textbf{ESI std. dev.} & \multicolumn{2}{c|}{0.04} & \multicolumn{2}{c|}{0.12} & \multicolumn{2}{c|}{0.10} & \multicolumn{2}{c|}{0.09} \\
+    \hline
+    \end{tabular}%
+    }
+    \label{table:real_world_esi_results}
+    \end{center}
+    \end{table}
 
 \begin{figure}[H]
     \centerline{\includegraphics[width=\columnwidth]{figures/schur_img_1.png}}
