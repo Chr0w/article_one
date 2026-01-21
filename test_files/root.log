@@ -1,0 +1,2347 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.12.11)  21 JAN 2026 10:35
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**/home/mircrda/article_one/test_files/root.tex
+(/home/mircrda/article_one/test_files/root.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-01-21> (./ieeeconf.cls
+Document Class: ieeeconf 2016/4/23 revision V1.6b by Pradeep Misra
+\@IEEEtrantmpdimenA=\dimen138
+\@IEEEtrantmpdimenB=\dimen139
+\@IEEEtrantmpcountA=\count185
+\@IEEEtrantmpcountB=\count186
+\@IEEEtrantmptoksA=\toks16
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 794.
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+\@IEEEnormalsizefontbaselineskip=\skip47
+
+-- This is a 10 point document.
+\normalsizebaselineskip=\skip48
+\normaljot=\skip49
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1113.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1113.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1113.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1113.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1113.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1113.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1113.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1113.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1113.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1113.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1113.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1113.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1113.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1113.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <16> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1113.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <16> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1113.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1113.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1113.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1113.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1113.
+\IEEEilabelindentA=\dimen140
+\IEEEilabelindentB=\dimen141
+\IEEEilabelindent=\dimen142
+\IEEEelabelindent=\dimen143
+\IEEEdlabelindent=\dimen144
+\labelindent=\dimen145
+\IEEEiednormlabelsep=\dimen146
+\IEEEiedmathlabelsep=\dimen147
+\IEEEiedtopsep=\skip50
+\c@section=\count187
+\c@subsection=\count188
+\c@subsubsection=\count189
+\c@paragraph=\count190
+\c@IEEEsubequation=\count191
+\abovecaptionskip=\skip51
+\belowcaptionskip=\skip52
+\c@figure=\count192
+\c@table=\count193
+\@IEEEeqnnumcols=\count194
+\@IEEEeqncolcnt=\count195
+\@IEEEtmpitemindent=\dimen148
+\c@biography=\count196
+\@IEEEtranrubishbin=\box50
+)
+** ATTENTION: Overriding command lockouts (line 9).
+** ATTENTION: Overriding IEEE standard margins (line 12).
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count197
+\l__pdf_internal_box=\box51
+) (./root.aux)
+\openout1 = `root.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 53.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <11> on input line 53.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7.69997> on input line 53.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5.5> on input line 53.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 53.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 53.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 53.
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 53.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 53--53
+[][][]$[]$\OT1/ptm/m/n/8 Bernard D. Re-searcheris with the De-part-ment of Elec-tri-cal
+ []
+
+
+Underfull \hbox (badness 8075) in paragraph at lines 53--53
+\OT1/ptm/m/n/8 En-gi-neer-ing, Wright State Uni-ver-sity, Day-ton, OH 45435, USA
+ []
+
+
+/home/mircrda/article_one/test_files/root.tex:61: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 This electronic document is a ï¿½
+                                      liveï¿½ template. The various componen...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:61: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 This electronic document is a ï¿½liveï¿½
+                                              template. The various componen...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 93.
+
+/home/mircrda/article_one/test_files/root.tex:94: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.94 ...units as identifiers in trade, such as ï¿½
+                                                  3.5-inch disk driveï¿½.
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:94: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.94 ...n trade, such as ï¿½3.5-inch disk driveï¿½
+                                                  .
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:96: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.96 ... spellings and abbreviations of units: ï¿½
+                                                  Wb/m2ï¿½ or ï¿½webers per ...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:96: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.96 ...gs and abbreviations of units: ï¿½Wb/m2ï¿½
+                                                   or ï¿½webers per square m...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:96: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.96 ...abbreviations of units: ï¿½Wb/m2ï¿½ or ï¿½
+                                                  webers per square meterï¿½...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:96: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.96 ...½Wb/m2ï¿½ or ï¿½webers per square meterï¿½
+                                                  , not ï¿½webers/m2ï¿½.  Sp...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:96: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.96 ... or ï¿½webers per square meterï¿½, not ï¿½
+                                                  webers/m2ï¿½.  Spell out u...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:96: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.96 ...s per square meterï¿½, not ï¿½webers/m2ï¿½
+                                                  .  Spell out units when th...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:96: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.96 ...ll out units when they appear in text: ï¿½
+                                                  . . . a few henriesï¿½, no...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:96: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.96 ... appear in text: ï¿½. . . a few henriesï¿½
+                                                  , not ï¿½. . . a few Hï¿½.
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:96: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.96 ...n text: ï¿½. . . a few henriesï¿½, not ï¿½
+                                                  . . . a few Hï¿½.
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:96: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.96 ... a few henriesï¿½, not ï¿½. . . a few Hï¿½
+                                                  .
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:97: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.97 \item Use a zero before decimal points: ï¿½
+                                                0.25ï¿½, not ï¿½.25ï¿½. Use ...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:97: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.97 ...e a zero before decimal points: ï¿½0.25ï¿½
+                                                  , not ï¿½.25ï¿½. Use ï¿½cm...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:97: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.97 ...before decimal points: ï¿½0.25ï¿½, not ï¿½
+                                                  .25ï¿½. Use ï¿½cm3ï¿½, not...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:97: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.97 ... decimal points: ï¿½0.25ï¿½, not ï¿½.25ï¿½
+                                                  . Use ï¿½cm3ï¿½, not ï¿½cc...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:97: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.97 ...points: ï¿½0.25ï¿½, not ï¿½.25ï¿½. Use ï¿½
+                                                  cm3ï¿½, not ï¿½ccï¿½. (bul...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:97: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.97 ...: ï¿½0.25ï¿½, not ï¿½.25ï¿½. Use ï¿½cm3ï¿½
+                                                  , not ï¿½ccï¿½. (bullet list)
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:97: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.97 ...ï¿½, not ï¿½.25ï¿½. Use ï¿½cm3ï¿½, not ï¿½
+                                                  ccï¿½. (bullet list)
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:97: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.97 ...not ï¿½.25ï¿½. Use ï¿½cm3ï¿½, not ï¿½ccï¿½
+                                                  . (bullet list)
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+
+]
+
+/home/mircrda/article_one/test_files/root.tex:110: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.110 ...mediately following the equation. Use ï¿½
+                                                  (1)ï¿½, not ï¿½Eq. (1)ï¿½ ...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:110: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.110 ...ely following the equation. Use ï¿½(1)ï¿½
+                                                  , not ï¿½Eq. (1)ï¿½ or ï¿½...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:110: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.110 ...wing the equation. Use ï¿½(1)ï¿½, not ï¿½
+                                                  Eq. (1)ï¿½ or ï¿½equation ...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:110: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.110 ...quation. Use ï¿½(1)ï¿½, not ï¿½Eq. (1)ï¿½
+                                                   or ï¿½equation (1)ï¿½, ex...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:110: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.110 .... Use ï¿½(1)ï¿½, not ï¿½Eq. (1)ï¿½ or ï¿½
+                                                  equation (1)ï¿½, except at...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:110: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.110 ..., not ï¿½Eq. (1)ï¿½ or ï¿½equation (1)ï¿½
+                                                  , except at the beginning ...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:110: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.110 ...xcept at the beginning of a sentence: ï¿½
+                                                  Equation (1) is . . .ï¿½
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:110: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.110 ...f a sentence: ï¿½Equation (1) is . . .ï¿½
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:116: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.116 \item The word ï¿½
+                        dataï¿½ is plural, not singular.
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:116: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.116 \item The word ï¿½dataï¿½
+                                is plural, not singular.
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:117: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.117 ...pt formatting, not a lowercase letter ï¿½
+                                                  oï¿½.
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:117: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.117 ...ormatting, not a lowercase letter ï¿½oï¿½
+                                                  .
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:119: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.119 \item A graph within a graph is an ï¿½
+                                            insetï¿½, not an ï¿½insertï¿½. T...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:119: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.119 ... A graph within a graph is an ï¿½insetï¿½
+                                                  , not an ï¿½insertï¿½. The...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:119: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.119 ...hin a graph is an ï¿½insetï¿½, not an ï¿½
+                                                  insertï¿½. The word altern...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:119: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.119 ...ph is an ï¿½insetï¿½, not an ï¿½insertï¿½
+                                                  . The word alternatively i...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:119: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.119 ...lternatively is preferred to the word ï¿½
+                                                  alternatelyï¿½ (unless you...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:119: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.119 ...s preferred to the word ï¿½alternatelyï¿½
+                                                   (unless you really mean s...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:120: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.120 \item Do not use the word ï¿½
+                                   essentiallyï¿½ to mean ï¿½approximatelyï¿...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:120: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.120 \item Do not use the word ï¿½essentiallyï¿½
+                                                  to mean ï¿½approximatelyï¿...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:120: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.120 ...se the word ï¿½essentiallyï¿½ to mean ï¿½
+                                                  approximatelyï¿½ or ï¿½eff...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:120: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.120 ...ssentiallyï¿½ to mean ï¿½approximatelyï¿½
+                                                   or ï¿½effectivelyï¿½.
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:120: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.120 ...llyï¿½ to mean ï¿½approximatelyï¿½ or ï¿½
+                                                  effectivelyï¿½.
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:120: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.120 ... ï¿½approximatelyï¿½ or ï¿½effectivelyï¿½
+                                                  .
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:121: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.121 \item In your paper title, if the words ï¿½
+                                                 that usesï¿½ can accurately...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:121: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.121 ...paper title, if the words ï¿½that usesï¿½
+                                                   can accurately replace th...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:121: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.121 ...esï¿½ can accurately replace the word ï¿½
+                                                  usingï¿½, capitalize the ï...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:121: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.121 ...n accurately replace the word ï¿½usingï¿½
+                                                  , capitalize the ï¿½uï¿½; ...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:121: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.121 ... the word ï¿½usingï¿½, capitalize the ï¿½
+                                                  uï¿½; if not, keep using l...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:121: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.121 ... word ï¿½usingï¿½, capitalize the ï¿½uï¿½
+                                                  ; if not, keep using lower...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:122: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.122 ... different meanings of the homophones ï¿½
+                                                  affectï¿½ and ï¿½effectï¿½...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:122: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.122 ...t meanings of the homophones ï¿½affectï¿½
+                                                   and ï¿½effectï¿½, ï¿½comp...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:122: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.122 ...gs of the homophones ï¿½affectï¿½ and ï¿½
+                                                  effectï¿½, ï¿½complementï¿...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:122: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.122 ... homophones ï¿½affectï¿½ and ï¿½effectï¿½
+                                                  , ï¿½complementï¿½ and ï¿½...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:122: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.122 ...phones ï¿½affectï¿½ and ï¿½effectï¿½, ï¿½
+                                                  complementï¿½ and ï¿½compl...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:122: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.122 ...ectï¿½ and ï¿½effectï¿½, ï¿½complementï¿½
+                                                   and ï¿½complimentï¿½, ï¿½...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:122: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.122 ...nd ï¿½effectï¿½, ï¿½complementï¿½ and ï¿½
+                                                  complimentï¿½, ï¿½discreet...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:122: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.122 ...¿½, ï¿½complementï¿½ and ï¿½complimentï¿½
+                                                  , ï¿½discreetï¿½ and ï¿½di...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:122: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.122 ...¿½complementï¿½ and ï¿½complimentï¿½, ï¿½
+                                                  discreetï¿½ and ï¿½discret...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:122: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.122 ...tï¿½ and ï¿½complimentï¿½, ï¿½discreetï¿½
+                                                   and ï¿½discreteï¿½, ï¿½pr...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:122: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.122 ... ï¿½complimentï¿½, ï¿½discreetï¿½ and ï¿½
+                                                  discreteï¿½, ï¿½principalï...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:122: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.122 ...entï¿½, ï¿½discreetï¿½ and ï¿½discreteï¿½
+                                                  , ï¿½principalï¿½ and ï¿½p...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:122: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.122 ...½, ï¿½discreetï¿½ and ï¿½discreteï¿½, ï¿½
+                                                  principalï¿½ and ï¿½princi...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:122: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.122 ...etï¿½ and ï¿½discreteï¿½, ï¿½principalï¿½
+                                                   and ï¿½principleï¿½.
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:122: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.122 ...d ï¿½discreteï¿½, ï¿½principalï¿½ and ï¿½
+                                                  principleï¿½.
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:122: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.122 ...eï¿½, ï¿½principalï¿½ and ï¿½principleï¿½
+                                                  .
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:123: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.123 \item Do not confuse ï¿½
+                              implyï¿½ and ï¿½inferï¿½.
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:123: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.123 \item Do not confuse ï¿½implyï¿½
+                                       and ï¿½inferï¿½.
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:123: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.123 \item Do not confuse ï¿½implyï¿½ and ï¿½
+                                              inferï¿½.
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:123: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.123 ...o not confuse ï¿½implyï¿½ and ï¿½inferï¿½
+                                                  .
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:124: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.124 \item The prefix ï¿½
+                          nonï¿½ is not a word; it should be joined to the w...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:124: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.124 \item The prefix ï¿½nonï¿½
+                                 is not a word; it should be joined to the w...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:125: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.125 \item There is no period after the ï¿½
+                                            etï¿½ in the Latin abbreviation ...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:125: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.125 \item There is no period after the ï¿½etï¿½
+                                                  in the Latin abbreviation ...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:125: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.125 ...he ï¿½etï¿½ in the Latin abbreviation ï¿½
+                                                  et al.ï¿½.
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:125: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.125 ...¿½ in the Latin abbreviation ï¿½et al.ï¿½
+                                                  .
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:126: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.126 \item The abbreviation ï¿½
+                                i.e.ï¿½ means ï¿½that isï¿½, and the abbrevi...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:126: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.126 \item The abbreviation ï¿½i.e.ï¿½
+                                        means ï¿½that isï¿½, and the abbrevi...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:126: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.126 \item The abbreviation ï¿½i.e.ï¿½ means ï¿½
+                                                 that isï¿½, and the abbrevi...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:126: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.126 ...breviation ï¿½i.e.ï¿½ means ï¿½that isï¿½
+                                                  , and the abbreviation ï¿½...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:126: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.126 ...s ï¿½that isï¿½, and the abbreviation ï¿½
+                                                  e.g.ï¿½ means ï¿½for examp...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:126: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.126 ...at isï¿½, and the abbreviation ï¿½e.g.ï¿½
+                                                   means ï¿½for exampleï¿½.
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:126: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.126 ...and the abbreviation ï¿½e.g.ï¿½ means ï¿½
+                                                  for exampleï¿½.
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:126: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.126 ...iation ï¿½e.g.ï¿½ means ï¿½for exampleï¿½
+                                                  .
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:139: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.139 ...ds should be introduced. Styles named ï¿½
+                                                  Heading 1ï¿½, ï¿½Heading 2...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:139: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.139 ... introduced. Styles named ï¿½Heading 1ï¿½
+                                                  , ï¿½Heading 2ï¿½, ï¿½Head...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:139: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.139 ...oduced. Styles named ï¿½Heading 1ï¿½, ï¿½
+                                                  Heading 2ï¿½, ï¿½Heading 3...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:139: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.139 ...es named ï¿½Heading 1ï¿½, ï¿½Heading 2ï¿½
+                                                  , ï¿½Heading 3ï¿½, and ï¿½...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:139: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.139 ...med ï¿½Heading 1ï¿½, ï¿½Heading 2ï¿½, ï¿½
+                                                  Heading 3ï¿½, and ï¿½Headi...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:139: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.139 ...ng 1ï¿½, ï¿½Heading 2ï¿½, ï¿½Heading 3ï¿½
+                                                  , and ï¿½Heading 4ï¿½ are ...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:139: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.139 ...ï¿½Heading 2ï¿½, ï¿½Heading 3ï¿½, and ï¿½
+                                                  Heading 4ï¿½ are prescribed.
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:139: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.139 ...ï¿½, ï¿½Heading 3ï¿½, and ï¿½Heading 4ï¿½
+                                                   are prescribed.
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:143: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.143 ...ted in the text. Use the abbreviation ï¿½
+                                                  Fig. 1ï¿½, even at the beg...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:143: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.143 ...e text. Use the abbreviation ï¿½Fig. 1ï¿½
+                                                  , even at the beginning of...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:171: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.171 ...er. As an example, write the quantity ï¿½
+                                                  Magnetizationï¿½, or ï¿½Ma...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:171: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.171 ...e, write the quantity ï¿½Magnetizationï¿½
+                                                  , or ï¿½Magnetization, Mï¿...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:171: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.171 ... the quantity ï¿½Magnetizationï¿½, or ï¿½
+                                                  Magnetization, Mï¿½, not j...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:171: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.171 ...gnetizationï¿½, or ï¿½Magnetization, Mï¿½
+                                                  , not just ï¿½Mï¿½. If inc...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:171: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.171 ..., or ï¿½Magnetization, Mï¿½, not just ï¿½
+                                                  Mï¿½. If including units i...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:171: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.171 ... ï¿½Magnetization, Mï¿½, not just ï¿½Mï¿½
+                                                  . If including units in th...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:171: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.171 ...nly with units. In the example, write ï¿½
+                                                  Magnetization (A/m)ï¿½ or ...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:171: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.171 ... example, write ï¿½Magnetization (A/m)ï¿½
+                                                   or ï¿½Magnetization {A[m(...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:171: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.171 ...e, write ï¿½Magnetization (A/m)ï¿½ or ï¿½
+                                                  Magnetization {A[m(1)]}ï¿½...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:171: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.171 ...(A/m)ï¿½ or ï¿½Magnetization {A[m(1)]}ï¿½
+                                                  , not just ï¿½A/mï¿½. Do n...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:171: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.171 ...½Magnetization {A[m(1)]}ï¿½, not just ï¿½
+                                                  A/mï¿½. Do not label axes ...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:171: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.171 ...tization {A[m(1)]}ï¿½, not just ï¿½A/mï¿½
+                                                  . Do not label axes with a...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:171: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.171 ...ntities and units. For example, write ï¿½
+                                                  Temperature (K)ï¿½, not ï¿...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:171: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.171 ... For example, write ï¿½Temperature (K)ï¿½
+                                                  , not ï¿½Temperature/K.ï¿½
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:171: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.171 ...ple, write ï¿½Temperature (K)ï¿½, not ï¿½
+                                                  Temperature/K.ï¿½
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:171: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.171 ...perature (K)ï¿½, not ï¿½Temperature/K.ï¿½
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+[2]
+
+/home/mircrda/article_one/test_files/root.tex:199: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.199 The preferred spelling of the word ï¿½
+                                            acknowledgmentï¿½ in America is ...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:199: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.199 ...spelling of the word ï¿½acknowledgmentï¿½
+                                                   in America is without an ...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:199: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.199 ...wledgmentï¿½ in America is without an ï¿½
+                                                  eï¿½ after the ï¿½gï¿½. Av...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:199: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.199 ...gmentï¿½ in America is without an ï¿½eï¿½
+                                                   after the ï¿½gï¿½. Avoid ...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:199: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.199 ...erica is without an ï¿½eï¿½ after the ï¿½
+                                                  gï¿½. Avoid the stilted ex...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:199: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.199 ...a is without an ï¿½eï¿½ after the ï¿½gï¿½
+                                                  . Avoid the stilted expres...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:199: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.199 ...¿½gï¿½. Avoid the stilted expression, ï¿½
+                                                  One of us (R. B. G.) thank...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:199: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.199 ..., ï¿½One of us (R. B. G.) thanks . . .ï¿½
+                                                    Instead, try ï¿½R. B. G....
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:199: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.199 ... B. G.) thanks . . .ï¿½  Instead, try ï¿½
+                                                  R. B. G. thanksï¿½. Put sp...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:199: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.199 ... .ï¿½  Instead, try ï¿½R. B. G. thanksï¿½
+                                                  . Put sponsor acknowledgme...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:211: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.211 \bibitem{c1} G. O. Young, ï¿½
+                                   Synthetic structure of industrial plastic...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:211: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.211 ...ok style with paper title and editor),ï¿½
+                                                   	in Plastics, 2nd ed. vol...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:211: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.211 ....  New York: McGraw-Hill, 1964, pp. 15ï¿½
+                                                  64.
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:212: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.212 ...	Belmont, CA: Wadsworth, 1993, pp. 123ï¿½
+                                                  135.
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:214: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.214 \bibitem{c4} B. Smith, ï¿½
+                                An approach to graphs of linear forms (Unpub...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:214: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.214 ...linear forms (Unpublished work style),ï¿½
+                                                   unpublished.
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:215: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.215 \bibitem{c5} E. H. Miller, ï¿½
+                                    A note on reflector arrays (Periodical s...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:215: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.215 ... on reflector arrays (Periodical styleï¿½
+                                                  Accepted for publication),...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:215: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.215 ...cal styleï¿½Accepted for publication),ï¿½
+                                                   IEEE Trans. Antennas Prop...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:216: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.216 \bibitem{c6} J. Wang, ï¿½
+                               Fundamentals of erbium-doped fiber amplifiers...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:216: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.216 ...er amplifiers arrays (Periodical styleï¿½
+                                                  Submitted for publication)...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:216: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.216 ...al styleï¿½Submitted for publication),ï¿½
+                                                   IEEE J. Quantum Electron....
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:218: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.218 ...zu, M. Hirano, K. Oka, and Y. Tagawa, ï¿½
+                                                  Electron spectroscopy stud...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:218: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.218 ...nterfaces(Translation Journals style),ï¿½
+                                                   IEEE Transl. J. Magn.Jpn....
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:218: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.218 ... Magn.Jpn., vol. 2, Aug. 1987, pp. 740ï¿½
+                                                  741 [Dig. 9th Annu. Conf. ...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:220: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.220 \bibitem{c10} J. U. Duncombe, ï¿½
+                                       Infrared navigationï¿½Part I: An asse...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:220: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.220 ...J. U. Duncombe, ï¿½Infrared navigationï¿½
+                                                  Part I: An assessment of f...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:220: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.220 ...ent of feasibility (Periodical style),ï¿½
+                                                   IEEE Trans. Electron Devi...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:220: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.220 .... Electron Devices, vol. ED-11, pp. 34ï¿½
+                                                  39, Jan. 1959.
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:221: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.221 ...S. Chen, B. Mulgrew, and P. M. Grant, ï¿½
+                                                  A clustering technique for...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:221: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.221 ... using radial basis function networks,ï¿½
+                                                   IEEE Trans. Neural Networ...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:221: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.221 ...rans. Neural Networks, vol. 4, pp. 570ï¿½
+                                                  578, July 1993.
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:222: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.222 \bibitem{c12} R. W. Lucky, ï¿½
+                                    Automatic equalization for digital commu...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:222: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.222 ...qualization for digital communication,ï¿½
+                                                   Bell Syst. Tech. J., vol....
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:222: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.222 ...yst. Tech. J., vol. 44, no. 4, pp. 547ï¿½
+                                                  588, Apr. 1965.
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:223: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.223 \bibitem{c13} S. P. Bingulac, ï¿½
+                                       On the compatibility of adaptive cont...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:223: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.223 ...blished Conference Proceedings style),ï¿½
+                                                   in Proc. 4th Annu. Allert...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:223: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.223 ... Systems Theory, New York, 1994, pp. 8ï¿½
+                                                  16.
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:224: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.224 \bibitem{c14} G. R. Faulhaber, ï¿½
+                                        Design of service systems with prior...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:224: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.224 ...ice systems with priority reservation,ï¿½
+                                                   in Conf. Rec. 1995 IEEE I...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:224: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.224 ... IEEE Int. Conf. Communications, pp. 3ï¿½
+                                                  8.
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:225: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.225 \bibitem{c15} W. D. Doyle, ï¿½
+                                    Magnetization reversal in films with bia...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:225: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.225 ...rsal in films with biaxial anisotropy,ï¿½
+                                                   in 1987 Proc. INTERMAG Co...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:225: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.225 ...n 1987 Proc. INTERMAG Conf., pp. 2.2-1ï¿½
+                                                  2.2-6.
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:226: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.226 ...6} G. W. Juette and L. E. Zeffanella, ï¿½
+                                                  Radio noise currents n sho...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:226: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.226 ...rs (Presented Conference Paper style),ï¿½
+                                                   presented at the IEEE Sum...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:226: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.226 ...mer power Meeting, Dallas, TX, June 22ï¿½
+                                                  27, 1990, Paper 90 SM 690-...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:227: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.227 \bibitem{c17} J. G. Kreifeldt, ï¿½
+                                        An analysis of surface-detected EMG ...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:227: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.227 ...d EMG as an amplitude-modulated noise,ï¿½
+                                                   presented at the 1989 Int...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:228: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.228 \bibitem{c18} J. Williams, ï¿½
+                                    Narrow-band analyzer (Thesis or Disserta...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:228: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.228 ...alyzer (Thesis or Dissertation style),ï¿½
+                                                   Ph.D. dissertation, Dept....
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:229: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.229 \bibitem{c19} N. Kawasaki, ï¿½
+                                    Parametric study of thermal and chemical...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:229: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.229 ...d chemical nonequilibrium nozzle flow,ï¿½
+                                                   M.S. thesis, Dept. Electr...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:230: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.230 \bibitem{c20} J. P. Wilkinson, ï¿½
+                                        Nonlinear resonant circuit devices (...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/mircrda/article_one/test_files/root.tex:230: LaTeX Error: Unicode character ï¿½ (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.230 ...sonant circuit devices (Patent style),ï¿½
+                                                   U.S. Patent 3 624 12, Jul...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+** Conference Paper **
+Before submitting the final camera ready copy, remember to:
+
+ 1. Manually equalize the lengths of two columns on the last page
+ of your paper;
+
+ 2. Ensure that any PostScript and/or PDF output post-processing
+ uses only Type 1 fonts and that every step in the generation
+ process uses the US letter (8.5in X 11in) paper size.
+
+[3] (./root.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 1077 strings out of 478287
+ 19618 string characters out of 5849288
+ 327732 words of memory out of 5000000
+ 19331 multiletter control sequences out of 15000+600000
+ 505463 words of font info for 92 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 34i,10n,37p,969b,301s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on root.pdf (3 pages, 128354 bytes).
+PDF statistics:
+ 70 PDF objects out of 1000 (max. 8388607)
+ 42 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

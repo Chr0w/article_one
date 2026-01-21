@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1768986149 "/home/mircrda/article_one/root.tex" "root.pdf" "root" 1768986150
+["pdflatex"] 1768997628 "/home/mircrda/article_one/root.tex" "root.pdf" "root" 1768997631
   "/etc/texmf/web2c/texmf.cnf" 1711097219 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/mircrda/article_one/root.tex" 1768985929 3097 32711d0c922dbae3c45570b2a9f31db1 ""
+  "/home/mircrda/article_one/root.tex" 1768996916 2676 15e782b552d22c90e0d64316e1040704 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc" 1422827479 2083 60e36f8eac802fcaf19eabe2633b406e ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -138,17 +138,19 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1765463249 4379155 98693266ff65f58d9f98aff394de12d2 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1765463280 2801067 3b82cb4eaf8ea04deca5d868c6662db7 ""
   "figures/figure_1_esi_example.png" 1768910160 114226 4f6a8b72f69d1323a3c3666e5a6f03e0 ""
+  "figures/heatmap.png" 1768990108 1257910 7e93022e3d93c3368cad84c8d7df7413 ""
   "figures/schur_img_1.png" 1768910160 9076519 a95b80ab9a1850a4b5d3cbd66f8f441d ""
   "ieeeconf.cls" 1768910773 202167 7b37f8353df61c9733ed46143eff807a ""
-  "root.aux" 1768986150 2771 d9d768c5bafd688695641e62de893f08 "pdflatex"
-  "root.tex" 1768985929 3097 32711d0c922dbae3c45570b2a9f31db1 ""
+  "root.aux" 1768997630 3048 265592bc595f69c3fa146540614ee467 "pdflatex"
+  "root.tex" 1768996916 2676 15e782b552d22c90e0d64316e1040704 ""
   "text/abstract.tex" 1768913791 783 3a352ae95bae594900699bc5cae8f270 ""
+  "text/appendix.tex" 1768996580 52 68d9f328f79aae3569c8aabc3572f52f ""
   "text/conclusions.tex" 1768913741 3 2f43b42fd833d1e77420a8dae7419000 ""
-  "text/experiments.tex" 1768986149 3021 cb26fa3a13e0b390958d243ea4f906e6 ""
+  "text/experiments.tex" 1768997628 4564 4de8ffb4d23f112ebc8b295acf62fd49 ""
   "text/funding_and_author_info.tex" 1768917951 692 2338951419654d38f3b0ba363b7a2837 ""
   "text/intro.tex" 1768917951 2695 7259bd3e13b00a9352725d654e510541 ""
   "text/limitations_and_future_work.tex" 1768915900 3 2f43b42fd833d1e77420a8dae7419000 ""
-  "text/methodology.tex" 1768913447 6564 9f81e5947f0cc6b8b0d8c9db533bb8c3 ""
+  "text/methodology.tex" 1768993949 6562 7ee9ac1b3e4ab869dda09c2a31203ce6 ""
   "text/references.tex" 1768913536 5250 a979d91462a0c77a4b7ac798fae87e48 ""
   "text/related_work.tex" 1768913468 103 36f2a74d84b16e43c6008c0e193dcf24 ""
   (generated)

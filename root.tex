@@ -1,20 +1,9 @@
-\documentclass[a4paper, 10pt, conference]{ieeeconf}      % Use this line for a4 paper
 
+\documentclass[letterpaper, 10 pt, conference]{ieeeconf}  % Comment this line out if you need a4paper
+%\documentclass[a4paper, 10 pt, conference]{ieeeconf}      % Use this line for a4 paper
 \IEEEoverridecommandlockouts                              % This command is only needed if 
                                                           % you want to use the \thanks command
-
 \overrideIEEEmargins                                      % Needed to meet printer requirements.
-
-%In case you encounter the following error:
-%Error 1010 The PDF file may be corrupt (unable to open PDF file) OR
-%Error 1000 An error occurred while parsing a contents stream. Unable to analyze the PDF file.
-%This is a known problem with pdfLaTeX conversion filter. The file cannot be opened with acrobat reader
-%Please use one of the alternatives below to circumvent this error by uncommenting one or the other
-%\pdfobjcompresslevel=0
-%\pdfminorversion=4
-
-% See the \addtolength command later in the file to balance the column lengths
-% on the last page of the document
 
 % The following packages can be found on http:\\www.ctan.org
 %\usepackage{graphics} % for pdf, bitmapped graphics files
@@ -36,11 +25,10 @@
 \usepackage{multirow}  % For multirow table cells
 \usepackage{adjustbox}  % For resizing tables
 
-\title{\LARGE \bf Environment Similarity Index: Quantifying map-environment divergences for robot localization performance estimation and improvement
-}
+% \vspace{-2.5cm}
+\title{ \LARGE \textbf{Environment Similarity Index: Quantifying map-environment divergences for robot localization performance estimation and improvement}}
 % --- FUNDING AND AUTHOR INFO ---
 \input{text/funding_and_author_info}
-
 \begin{document}
 \maketitle
 \thispagestyle{empty}
@@ -79,6 +67,7 @@
 % --- APPENDIXES ---
 % Appendixes should appear before the acknowledgment.
 \section*{APPENDIX}
+\input{text/appendix.tex}
 
 % --- ACKNOWLEDGMENT ---
 \section*{ACKNOWLEDGMENT}

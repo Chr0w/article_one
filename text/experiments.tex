@@ -7,19 +7,23 @@ In this section, we describe the two experiments designed demonstrate how the ES
 
 \subsection{Real-world experiment} 
 To demonstrate that the ESI works on a real robot in a real enviroment, and that it can be used to visualize changes in it, we used a MiR100 AMR as the platform.
-The venue is the production hall of a packaging and labeling company. It is chosen because it represents the type of environment where AMCL often struggles;
+It has two SICK S300 safety rated 2D Lidar sensors that scans in a horizontal plane 20cm above the ground, with a 360 degree field of view and a max range of 30m.
+The venue is the production hall of a packaging and labeling company. It was chosen because it represents the type of environment where AMCL often struggles;
 it is constantly developing, and most of the time, the the majority of what the robot is able to see consists of transient objects, as seen in Figure X.
-\subsubsection{Setup} A small section of the hall is mapped, using the native mapping functionality (based on ROS1 cartographer). We placed two waypoints, Start and Finish.
-The task of the robot is simply to move from Start to Finish. In order avoid disrupting their production, instead of moving the items around, we first recorded the map,
-and then gradually edit the map manually. This will create the same map-environment disagreements. The robot will be tested in four scenarios: 1) No, 2) light, 3) moderate 
-and 4) severe changes. Each scenario will be executed 5 times, and the ESI recorded for all runs. When the robot reaches the end, its pose error is obtained from a reference
-coordinate system on the floor. 
-\subsubsection{Results}
+\subsubsection{\textbf{Setup}} A small section of the hall was mapped, using the native mapping functionality (based on ROS1 cartographer). Two waypoints, Start and Finish, were placed.
+The task of the robot was simply to move from Start to Finish. In order avoid disrupting their production, instead of moving the items around, we first recorded the map,
+and then gradually edited it manually, resulting in similar map-environment disagreements. Some transient objects were removed, and new ones added. 
+The robot was tested in four scenarios: 1) No, 2) light, 3) moderate and 4) severe changes. Each scenario was executed 5 times, and the ESI recorded for all runs. 
+When the robot reached the end, its pose error was obtained from a reference coordinate system on the floor. The ESI scores found during each run were then 
+used to create heatmaps for each scenario, as seen in figure X. The method used is Inverse Distance Weighting (IDW) with a power of 2 and radius of 30m. 
+A Line-of-sight (LoS) check was implemented in order to reflect how readings on either side of an obstacle should not affect each other. 
 
+
+\subsubsection{\textbf{Results}}
 
 \begin{table}[!h]
     \begin{center}
-    \caption{\footnotesize{ESI results for the real-world experiment. 1) No changes, 2) Light changes, 3) Moderate changes, 4) Significant changes. Units for rows with a * is \textnormal{[mm]} and \textnormal{[°]}.}}
+    \caption{\footnotesize{ESI results for the real-world experiment. 1) No changes, 2) Light changes, 3) Moderate changes, 4) Significant changes. Rows marked with * have units \textnormal{[mm]} and \textnormal{[°]}, respectively.}}
     \adjustbox{width=\textwidth/2,center}{%
     \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
     \hline
@@ -41,11 +45,22 @@ coordinate system on the floor.
 
 \begin{figure}[H]
     \centerline{\includegraphics[width=\columnwidth]{figures/schur_img_1.png}}
-    \caption{Example of a figure caption.}
+    \caption{Photo of a MiR100 moving through the production hall towards the finish waypoint.}
     \label{fig2}
 \end{figure}
 
+A Levene's test of equality of variances on the position errors (Euclidean distance from goal) for scenarios 1-3 shows no significant 
+differences in variance ($p=0.8153$, center=median). 
+A one-way ANOVA test shows no significant differences in mean position error ($p=0.7046$). These tests show that for no, light and moderate changes, 
+AMCL is able to consistently maintain a low pose error. However, when the changes became severe, AMCL failed in every run, and the robot was unable to reach the goal. 
+This corresponded with a low mean ESI score of 0.22 for scenario 4. 
 
+The heatmap clearly shows how the ESI reflects the intensity of local changes across the hall in the different scenarios. 
+
+\begin{figure}[H]
+    \centerline{\includegraphics[width=\columnwidth]{figures/heatmap.png}}
+    \caption{ESI-based Heatmaps for each of the four scenarios in the same section of the hall.}
+\end{figure}
 
 \subsection{Simulation experiment}
 ...

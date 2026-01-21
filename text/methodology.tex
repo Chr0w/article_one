@@ -17,7 +17,7 @@ the only viable option.
 
 \subsection{The Environment Similarity Index (ESI)}
 The index is a ratio, based on the current pose estimate from the robots localization module - for this paper, AMCL. On every laser-scan callback, each ray point is evaluated: 
-Is it close to an expected obstacle in the map? If yes, count as a \underline{Matched}. If not, count as an \underline{Added}. This tells us that an object has been added to the environment 
+Is it close to an expected obstacle in the map? If yes, count as a \underline{Matched}; else, count as an \underline{Added}. This tells us that an object has been added to the environment 
 that is not on the map.  In addition, all laser rays that returned a value are traced in the map from the scanner and outwards to detect obstacles that they \textit{should} 
 have hit but didn't. These objects count towards \underline{Removed} to indicate that something on the map has been removed from the environment. 
 These classifcations are then used to calculate the ESI score; Figure X provides an overview of the classification.
