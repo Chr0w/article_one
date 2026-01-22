@@ -1,8 +1,9 @@
-In this section, we describe the two experiments designed demonstrate how the ESI can be used to:
+In this section, we describe the two experiments designed demonstrate:
 \begin{itemize} 
-\item Quantify and visualize changes in the environment, and to what degree it accurately reflects these changes.
-\item Estimate and predict AMCL's performance in rapidly changing environments.
-\item Reduce AMCL's pose estimation error in rapidly changing environments by dynamically tuning its parameters.
+\item That AMCL provides reliable pose estimates in environments with low to moderate changes.
+\item How the ESI can be used to quantify and visualize changes in the environment, and to what degree it accurately reflects these changes.
+\item That the ESI can be used as an indicator of when AMCL can no longer be trusted to provide accurate pose estimates doe to map-environment differences.
+\item How the pose estimation error in rapidly changing environments can be reduced by using the ESI to dynamically tune AMCL's parameters.
 \end{itemize}
 
 \subsection{Real-world experiment} 
@@ -51,7 +52,7 @@ A Line-of-sight (LoS) check was implemented in order to reflect how readings on 
 
 A Levene's test of equality of variances on the position errors (Euclidean distance from goal) for scenarios 1-3 shows no significant 
 differences in variance ($p=0.8153$, center=median). 
-A one-way ANOVA test shows no significant differences in mean position error ($p=0.7046$). These tests show that for no, light and moderate changes, 
+A one-way ANOVA test shows no significant differences in mean position error ($p=0.7046$). These tests show that, in this experiment, for no, light and moderate changes, 
 AMCL is able to consistently maintain a low pose error. However, when the changes became severe, AMCL failed in every run, and the robot was unable to reach the goal. 
 This corresponded with a low mean ESI score of 0.22 for scenario 4. 
 
@@ -63,5 +64,4 @@ The heatmap clearly shows how the ESI reflects the intensity of local changes ac
 \end{figure}
 
 \subsection{Simulation experiment}
-...
 

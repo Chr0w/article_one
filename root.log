@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.12.11)  21 JAN 2026 13:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.12.11)  22 JAN 2026 09:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -537,7 +537,7 @@ File: figures/figure_1_esi_example.png Graphic file (type png)
 Package pdftex.def Info: figures/figure_1_esi_example.png  used on input line 26.
 (pdftex.def)             Requested size: 245.71811pt x 130.78966pt.
  [2 <./figures/figure_1_esi_example.png>]) (./text/experiments.tex
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 26.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 27.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
@@ -547,17 +547,17 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <figures/schur_img_1.png, id=24, 3485.02pt x 1872.9975pt>
 File: figures/schur_img_1.png Graphic file (type png)
 <use figures/schur_img_1.png>
-Package pdftex.def Info: figures/schur_img_1.png  used on input line 47.
+Package pdftex.def Info: figures/schur_img_1.png  used on input line 48.
 (pdftex.def)             Requested size: 245.71811pt x 132.03777pt.
-
-Underfull \vbox (badness 1205) has occurred while \output is active []
-
 <figures/heatmap.png, id=25, 1984.41376pt x 1162.3425pt>
 File: figures/heatmap.png Graphic file (type png)
 <use figures/heatmap.png>
-Package pdftex.def Info: figures/heatmap.png  used on input line 61.
+Package pdftex.def Info: figures/heatmap.png  used on input line 62.
 (pdftex.def)             Requested size: 245.71811pt x 143.90906pt.
-) (./text/conclusions.tex) [3 <./figures/schur_img_1.png> <./figures/heatmap.png>] (./text/limitations_and_future_work.tex) (./text/appendix.tex) (./text/references.tex [4])
+) (./text/conclusions.tex)
+Underfull \vbox (badness 4819) has occurred while \output is active []
+
+ [3 <./figures/schur_img_1.png> <./figures/heatmap.png>] (./text/limitations_and_future_work.tex) (./text/appendix.tex) (./text/references.tex [4])
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -575,13 +575,13 @@ Before submitting the final camera ready copy, remember to:
 Here is how much of TeX's memory you used:
  8733 strings out of 478287
  131025 string characters out of 5849288
- 423043 words of memory out of 5000000
+ 424043 words of memory out of 5000000
  26719 multiletter control sequences out of 15000+600000
  544613 words of font info for 180 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,10n,62p,410b,402s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/NewTXMI5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txsys.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/ztmr.pfb>
-Output written on root.pdf (5 pages, 14053922 bytes).
+Output written on root.pdf (5 pages, 14054078 bytes).
 PDF statistics:
  89 PDF objects out of 1000 (max. 8388607)
  51 compressed objects within 1 object stream
