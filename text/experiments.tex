@@ -79,11 +79,15 @@ back into their original positions one by one, also every fourth second. The tes
 where the robot moves from a known to an unknown area, and then back again, meaning that in the middle of the test, the map-environment differences 
 are at their highest, as none of the boxes are at their original positions. This is to capture not only when AMCL diverges, 
 but also to see if it is able to recover. The robot has a single 360deg FoW 2D laser scanner with a max range of 30m. As such, it cannot cover the entire map 
-from any one position. The ratio of boxes left at their original positions over the total number of boxes is published as 
-\texttt{/map\_integrity\_ratio}, and serves as a ground truth to evaluate how closely the ESI reflects the changes. Each run will be performed twice. One with
-the default AMCL parameters, and one where the ESI is used to dynamically tune the $\alpha$-parameters of AMCL. These control the noise added to the 
-motion update step. The hypothesis is that when the environment does not match the map, the particle cloud will continue to expand, because none of them
-have a significantly higher weight than the others, and therefore the filter will not converge. But if some of the particles on the edge of the cloud,
+from any one position. The "true" state of the environment is calculated as 
+\begin{equation}
+\dfrac{U}{U+A+R}
+\end{equation} 
+where $U$ is the number of boxes left at their original positions, $A$ is the number of boxes added, and $R$ is the number of boxes removed.
+It is published as \texttt{/map\_integrity\_ratio} (MIRA), and serves as a ground truth to evaluate how closely the ESI reflects the changes. 
+Each run will be performed twice. One with the default AMCL parameters, and one where the ESI is used to dynamically tune the $\alpha$-parameters of AMCL. 
+These control the noise added to the motion update step. The hypothesis is that when the environment does not match the map, the particle cloud will continue to expand, 
+because none of them have a significantly higher weight than the others, and therefore the filter will not converge. But if some of the particles on the edge of the cloud,
 where the accumulated random noise is highest, suddenly have just a few beams with a high weight (false positive), the filter will quickly converge to that
 wrong pose. By using the ESI to limit this expansion, this risk is reduced. Essentially, AMCL now places more trust in the odometry, because the laser data
 can no longer be trusted. When the environment slowly begins to match the map again, the ESI will rise, returning the filter to its default level of exploration.
@@ -91,23 +95,25 @@ The two runs are analyzed and compared. Finally, the results are used to develop
 will exceed a threshold of 0.5m. 
 
 \subsubsection{\textbf{Results}} 
-1. ESI vs map integrity ratio
+1. ESI vs map integrity ratio for default AMCL.
 Evaluation of results in the range of light to severe changes.
 Figure X (top) shows the individual - and their interpolated mean (black) - ESI scores vs the map integrity ratio, and the absolute position and yaw errors (bottom).
-In general, the scores follow the map integrity ratio closely. The general pattern and stepwise changes is clearly reflected in the mean, with no notcieable time delay.
-For the entire range, the mean ESI is below the true value. This can be explained by noise: Although the noise can in some cases cause the score to be
-higher than the true value, in general, there will be more wrong classifications than correct ones, and therefore the mean will be lower.
-To confirm this, a run with zero noise was performed. The resulting mean is the blue line. .... 
+In general, the scores follow the MIRA closely. The general pattern and stepwise changes is clearly reflected in the mean, with no notcieable time delay.
+In the beginning, since the ESI can never be more than 1, the mean is slighly below the true value. It then follows it very closely, and after about 15 seconds, 
+the ESI rises slightly above the MIRA for the rest of the test. Since the robot cannot observe the entire map all the time, this difference is expected. 
+On average, there will be changes outside the range of the laser, which means that the true state of the environment is worse than what the robot can detect. 
+In the final section, the ESI is still above the MIRA, even though the map and environment are now completely different. This is caused by false positive matches
+that results from the rising pose error, and the fact that the ESI cannot be less than 0. 
+Up until the 50s mark, both position and yaw error is kept low, with mean values of 0.1m and 0.57°, respectively. Yaw does exhibit some spikes to around 10 degrees,
+but they are quickly corrected. At this point, the ESI is about 0.27 (mir = 0.21). After this, they both start to increase rapidly. 
+This shows that, as long as the map and environment are at least 21-27\% similar, the default AMCL is able to provide accurate pose estimates in changing environments. 
+It also shows that, given the robot is well localized, as long as the ESI is kept above 0.27, we can expect it to be an accurate estimate of the map-environment difference.
+However, there will be scenarios where AMCL has diverged, even with high ESI scores, due to other factors such as map symmetry, lack of features, hallway areas, etc.
 
 Figure caption: Note that 50\% of data is used. 
 
-Both position and yaw error is kept low up until the 50s mark, which corresponds with an ESI of about 0.27 (mir = 0.35). Yaw does exhibit some spikes to around 10 degrees,
-but they are quickly corrected. After 50s, both position and yaw error starts to increase, thus increasing the number of false positives, driving the ESI above the true value.
-This shows that, as long as the map and environment are at least 27-35\% similar, the default AMCL is able to provide accurate pose estimates in changing environments. 
-From this, we can conclude that, given the robot is well localized, as long as the ESI is kept above 0.35, we can expect it to be an accurate estimate of the map-environment difference.
-
-
-Plot of ESI vs map integrity ratio: Make one with zero noise to confirm why the esi mean is below mir. 
-
-I need to define what no, light and moderate changes are. (and severe)
-
+\begin{figure}[H]
+    \centerline{\includegraphics[width=\columnwidth]{figures/mir_esi_errors.png}}
+    \caption{ESI vs map integrity ratio for default AMCL.}
+    \label{fig4}
+\end{figure}
