@@ -87,13 +87,14 @@ ESI = \frac{\sum_{i=0}^{n_s-1}\chi_M(i)}{n_s+\sum_{k}\sum_{j=1}^{n_r^{(k)}-1} \c
 If the scan only sees matches, the ratio is 1/1 = 1, indicating a perfect match with the map.
 Both added and removed points increases the denominator equally, driving the index down.  
 Note how this reflects reality; there is no upper limit to how much you can change an environment; you can always use a sensor 
-with a greater range and higher resolution and then add more items that are not mapped. 
+with a greater range and higher resolution and then add and remove more items. 
 The index therefore converges towards zero as more changes are made, but it will only be exactly zero if it sees zero matches.
 The index can be calculated for any number of measurements per sensor update, and can be used for any given localization module.
 It is important to note that since the ESI depends on the current pose estimate, it will of course not be a correct 
 representation of the environment if the pose error becomes too great. In order to confirm it's usability, we must
 show that the ESI accurately reflects the environment while the pose error is in its normal range. Then we need to show that
-ACML is able to maintain its pose error for no, light and moderate changes in the environment. 
+ACML is able to maintain its pose error for no, light and moderate changes in the environment. We will confirm that the ESI
+can be calculated and used by a real robot in a real environment.
 
 
 

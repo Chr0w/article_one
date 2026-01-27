@@ -1,7 +1,7 @@
 % In this section, we describe the two experiments designed demonstrate:
 
 \subsection{Real-world experiment} 
-To demonstrate that the ESI works on a real robot in a real enviroment, and that it can be used to visualize changes in it, we used a MiR100 AMR as the platform.
+To demonstrate that the ESI can be applied in the real world, and that it can be used to visualize changes in it, we used a MiR100 AMR as the platform.
 It has two SICK S300 safety rated 2D Lidar sensors that scans in a horizontal plane 20cm above the ground, with a 360 degree field of view and a max range of 30m.
 The venue is the production hall of a packaging and labeling company. It was chosen because it represents the type of environment where AMCL often struggles;
 it is constantly developing, and most of the time, the the majority of what the robot is able to see consists of transient objects, as seen in Figure X.
@@ -61,12 +61,10 @@ The heatmap clearly shows how the ESI reflects the intensity of local changes ac
 A simulated test was performed to demonstrate the following:
 
 \begin{itemize} 
-    \item That AMCL provides reliable pose estimates in environments with low to moderate changes.
-    \item How the ESI can be used to quantify changes in the environment, and to what degree it accurately reflects these changes.
-    \item That the ESI can be used as an indicator of when AMCL can no longer be trusted to provide accurate pose estimates due to map-environment differences.
-    \item How the pose estimation error in rapidly changing environments can be reduced by using the ESI to dynamically tune AMCL's parameters.
+    \item a. That AMCL provides reliable pose estimates in environments with low to moderate changes, and to what degree ESI accurately reflects and quantifies these changes.  
+    \item b. That the ESI can be used as an indicator of when AMCL can no longer be trusted to provide accurate pose estimates due to map-environment differences.
+    \item c. How the pose estimation error in rapidly changing environments can be reduced by using the ESI to dynamically tune AMCL's parameters.
     \end{itemize}
-
 
 \subsubsection{\textbf{Setup}} 
 The simulator used is Nvidia Isaac Sim v5.0. The robot stack runs on a separate docker container, and communicates with the simulator via ROS2 (humble).
@@ -81,22 +79,31 @@ are at their highest, as none of the boxes are at their original positions. This
 but also to see if it is able to recover. The robot has a single 360deg FoW 2D laser scanner with a max range of 30m. As such, it cannot cover the entire map 
 from any one position. The "true" state of the environment is calculated as 
 \begin{equation}
-\dfrac{U}{U+A+R}
+\dfrac{U}{U+2M}
 \end{equation} 
-where $U$ is the number of boxes left at their original positions, $A$ is the number of boxes added, and $R$ is the number of boxes removed.
+where $U$ is the number of unmoved boxes, and $M$ is the number of moved boxes. M is scaled by 2 because a moved box
+accounts for the same change as an added plus a removed box. 
 It is published as \texttt{/map\_integrity\_ratio} (MIRA), and serves as a ground truth to evaluate how closely the ESI reflects the changes. 
 Each run will be performed twice. One with the default AMCL parameters, and one where the ESI is used to dynamically tune the $\alpha$-parameters of AMCL. 
 These control the noise added to the motion update step. The hypothesis is that when the environment does not match the map, the particle cloud will continue to expand, 
 because none of them have a significantly higher weight than the others, and therefore the filter will not converge. But if some of the particles on the edge of the cloud,
-where the accumulated random noise is highest, suddenly have just a few beams with a high weight (false positive), the filter will quickly converge to that
-wrong pose. By using the ESI to limit this expansion, this risk is reduced. Essentially, AMCL now places more trust in the odometry, because the laser data
-can no longer be trusted. When the environment slowly begins to match the map again, the ESI will rise, returning the filter to its default level of exploration.
-The two runs are analyzed and compared. Finally, the results are used to develop a method for using the ESI to predict when the pose estimation error 
-will exceed a threshold of 0.5m. 
+where the accumulated random noise is highest, suddenly have just a few beams with a high weight (false positives), the filter will quickly converge to that
+wrong pose, and then be unable to recover. By using the ESI to limit this expansion, this risk is reduced. Essentially, AMCL now places more trust in the odometry, 
+because the ESI indicates that the laser data can no longer be trusted. When (if) the environment slowly begins to match the map again, the ESI will rise, 
+returning the filter to its default level of exploration. The two runs are analyzed and compared. Finally, the results are used to develop a method for using the 
+ESI to predict when AMCL will diverge.   
+
+% the pose estimation error will exceed a threshold of 0.5m
+
+\begin{figure}[t]
+    \centerline{\includegraphics[width=\columnwidth]{figures/sim_setup.png}}
+    \caption{Scene from Isaac Sim. Red polygons represent the obstacle space. Waypoints are marked with purple squares. The robot is seen moving from top left to center.}
+    \label{fig5}
+\end{figure}
+
 
 \subsubsection{\textbf{Results}} 
-1. ESI vs map integrity ratio for default AMCL.
-Evaluation of results in the range of light to severe changes.
+\textbf{\newline a. ESI vs map integrity ratio for default AMCL: Evaluation of results in the range of light to severe changes.}
 Figure X (top) shows the individual - and their interpolated mean (black) - ESI scores vs the map integrity ratio, and the absolute position and yaw errors (bottom).
 In general, the scores follow the MIRA closely. The general pattern and stepwise changes is clearly reflected in the mean, with no notcieable time delay.
 In the beginning, since the ESI can never be more than 1, the mean is slighly below the true value. It then follows it very closely, and after about 15 seconds, 
@@ -110,10 +117,19 @@ This shows that, as long as the map and environment are at least 21-27\% similar
 It also shows that, given the robot is well localized, as long as the ESI is kept above 0.27, we can expect it to be an accurate estimate of the map-environment difference.
 However, there will be scenarios where AMCL has diverged, even with high ESI scores, due to other factors such as map symmetry, lack of features, hallway areas, etc.
 
-Figure caption: Note that 50\% of data is used. 
-
 \begin{figure}[H]
     \centerline{\includegraphics[width=\columnwidth]{figures/mir_esi_errors.png}}
-    \caption{ESI vs map integrity ratio for default AMCL.}
+    \caption{A: ESI vs map integrity ratio for default AMCL. B: Position error. C: Yaw error. Data range is the first half of the test.}
     \label{fig4}
 \end{figure}
+
+\textbf{\newline b. ESI as an indicator of when AMCL will diverge.}
+The hypothesis is that the lower the ESI any given time t, the higher probability AMCL has of having diverged, and that this probability 
+can be modeled by an exponential decay function p(lost):
+\begin{equation}
+p_{lost}(ESI)=
+\end{equation}
+where $A$ and $B$ are constants, and $t$ is the time.
+
+
+\textbf{\newline c. The ability of ESI to dynamically tune AMCL's parameters and reduce pose error in rapidly changing environments.}
