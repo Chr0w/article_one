@@ -90,5 +90,10 @@ Note how this reflects reality; there is no upper limit to how much you can chan
 with a greater range and higher resolution and then add more items that are not mapped. 
 The index therefore converges towards zero as more changes are made, but it will only be exactly zero if it sees zero matches.
 The index can be calculated for any number of measurements per sensor update, and can be used for any given localization module.
+It is important to note that since the ESI depends on the current pose estimate, it will of course not be a correct 
+representation of the environment if the pose error becomes too great. In order to confirm it's usability, we must
+show that the ESI accurately reflects the environment while the pose error is in its normal range. Then we need to show that
+ACML is able to maintain its pose error for no, light and moderate changes in the environment. 
+
 
 
