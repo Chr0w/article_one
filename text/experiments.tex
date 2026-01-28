@@ -108,7 +108,8 @@ Figure X (top) shows the individual - and their interpolated mean (black) - ESI 
 In general, the scores follow the MIRA closely. The general pattern and stepwise changes is clearly reflected in the mean, with no notcieable time delay.
 In the beginning, since the ESI can never be more than 1, the mean is slighly below the true value. It then follows it very closely, and after about 15 seconds, 
 the ESI rises slightly above the MIRA for the rest of the test. Since the robot cannot observe the entire map all the time, this difference is expected. 
-On average, there will be changes outside the range of the laser, which means that the true state of the environment is worse than what the robot can detect. 
+On average, there will be changes outside the range of the laser, which means that, since the environment state is only declining, the true state of the environment 
+can only be as bad or worse than what the robot can detect. 
 In the final section, the ESI is still above the MIRA, even though the map and environment are now completely different. This is caused by false positive matches
 that results from the rising pose error, and the fact that the ESI cannot be less than 0. 
 Up until the 50s mark, both position and yaw error is kept low, with mean values of 0.1m and 0.57°, respectively. Yaw does exhibit some spikes to around 10 degrees,
@@ -124,12 +125,17 @@ However, there will be scenarios where AMCL has diverged, even with high ESI sco
 \end{figure}
 
 \textbf{\newline b. ESI as an indicator of when AMCL will diverge.}
-The hypothesis is that the lower the ESI any given time t, the higher probability AMCL has of having diverged, and that this probability 
-can be modeled by an exponential decay function p(lost):
+The hypothesis is that the lower the ESI any given time t, the higher probability AMCL has of having diverged, and that the probability 
+of being lost at time t can be modeled by an exponential decay function as:
 \begin{equation}
-p_{lost}(ESI)=
+p_{lost}(t)=\int_0^t \left[a*e^{-b*ESI(t)+c}-d\right]\;dt
 \end{equation}
-where $A$ and $B$ are constants, and $t$ is the time.
+where $a, b, c$ and $d$ adjustable parameters. 
+To obtain the training and validation data sets, we load the first 60\% of all runs. The last 40\% is discarded, because from this point, 
+we can no longer trust the value of the ESI, as AMCL will likely have diverged. From this, for each set, we obtain 100 subsamples of 20 seconds each,
+with their starting time randomly chosen. Each subsample s is marked as lost or not lost, based on the absolute position error E:
+For any value of E, if E > 0.5m, mark as lost. The training data will be balanced to 50\% lost, and the validation data will be unbalanced with 5\% lost 
+better reflect a real distribution. 
 
 
 \textbf{\newline c. The ability of ESI to dynamically tune AMCL's parameters and reduce pose error in rapidly changing environments.}
