@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1769609787 "/home/mircrda/article_one/root.tex" "root.pdf" "root" 1769609790
+["pdflatex"] 1769692756 "/home/mircrda/article_one/root.tex" "root.pdf" "root" 1769692758
   "/etc/texmf/web2c/texmf.cnf" 1711097219 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/mircrda/article_one/root.tex" 1769584033 2677 64bda5157510447060af7b3de6fc1b52 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -139,20 +139,21 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1765463280 2801067 3b82cb4eaf8ea04deca5d868c6662db7 ""
   "figures/figure_1_esi_example.png" 1768910160 114226 4f6a8b72f69d1323a3c3666e5a6f03e0 ""
   "figures/heatmap.png" 1768990108 1257910 7e93022e3d93c3368cad84c8d7df7413 ""
-  "figures/mir_esi_errors.png" 1769584033 836220 a411ea4f643d2b78ec19670d393c0007 ""
+  "figures/mir_esi_errors.png" 1769691276 669400 79b983c1e89b426a7d28e21e2fffd5c3 ""
   "figures/schur_img_1.png" 1768910160 9076519 a95b80ab9a1850a4b5d3cbd66f8f441d ""
+  "figures/sim_results_alpha.png" 1769675326 166271 8b7a624091252ad061553aec299ec538 ""
   "figures/sim_setup.png" 1769584033 220766 d416630dee37e67c3e5c575b53fdb13b ""
   "ieeeconf.cls" 1768910773 202167 7b37f8353df61c9733ed46143eff807a ""
-  "root.aux" 1769609789 3812 5591800c09a2c34bed26fb324707baf0 "pdflatex"
+  "root.aux" 1769692758 4349 6a755500cea27545df7adef17d69f113 "pdflatex"
   "root.tex" 1769584033 2677 64bda5157510447060af7b3de6fc1b52 ""
   "text/abstract.tex" 1768913791 783 3a352ae95bae594900699bc5cae8f270 ""
   "text/appendix.tex" 1768996580 52 68d9f328f79aae3569c8aabc3572f52f ""
   "text/conclusions.tex" 1768913741 3 2f43b42fd833d1e77420a8dae7419000 ""
-  "text/experiments.tex" 1769609787 11827 03d29f792b4bb27dee103eef04a1efea ""
+  "text/experiments.tex" 1769692756 14184 4a21ce8975fc9c722860314d0846a590 ""
   "text/funding_and_author_info.tex" 1768917951 692 2338951419654d38f3b0ba363b7a2837 ""
-  "text/intro.tex" 1768917951 2695 7259bd3e13b00a9352725d654e510541 ""
+  "text/intro.tex" 1769676621 2714 d8f682b28427dd56c481fbfb8f5e4b0e ""
   "text/limitations_and_future_work.tex" 1768915900 3 2f43b42fd833d1e77420a8dae7419000 ""
-  "text/methodology.tex" 1769584033 7101 ea95d9718b866f06803615a5db838345 ""
+  "text/methodology.tex" 1769675989 7108 a9e54dfa0679d617dd6d354a7df0c2e2 ""
   "text/references.tex" 1768913536 5250 a979d91462a0c77a4b7ac798fae87e48 ""
   "text/related_work.tex" 1769584033 4040 ed496c12cb8812ab65a1f10e34abea9d ""
   (generated)

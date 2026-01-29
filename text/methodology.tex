@@ -4,7 +4,7 @@ The difference that is measured is defined as a \textit{change in how the robot 
 This is an important definition, with three major aspects. The first is that there can be a lot of changes to an environment, but if the robot does not sense it, then the changes 
 by definition have no impact on the robot's ability to localize itself. 
 The second is that it makes the index agnostic to which localization method is used, and which sensor modalities are available. A difference in observed visual features (I.e. SIFT) 
-can be used just as well as geometric lidar, radar or sonar points, both 2D and 3D. The third is that changes that *could* be sensed but aren't, should not affect the index. 
+can be used just as well as geometric lidar, radar or sonar points, both 2D and 3D. The third is that changes that \textit{could} be sensed but aren't, should not affect the index. 
 Changes that happen outside the sensor coverage can naturally not be detected, and so they have no effect on localization. Unseen changes may also change back to the initial state 
 before they are even noticed. The metric should as mentioned apply to any kind of sensors used, but since MiR robots localize via 2D Lidar, this will be the sensor modality used 
 from here on. The reference map could likewise be of any kind (graph based, geometry based, grid based, etc), but for this project, the (occupancy) grid-based map is selected. 
