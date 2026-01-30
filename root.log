@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2026.1.30)  30 JAN 2026 12:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2026.1.30)  30 JAN 2026 14:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -544,53 +544,53 @@ Package pdftex.def Info: figures/figure_1_esi_example.png  used on input line 26
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ) (./text/experiments.tex [3 <./figures/figure_1_esi_example.png>]
-Underfull \hbox (badness 2173) in paragraph at lines 36--40
-\OT1/ptm/b/n/10 1b) \OT1/ptm/m/n/10 Given a cor-rect ini-tial pose, and that the map-
- []
-
 <figures/mir_esi_errors.png, id=27, 1219.9176pt x 561.5379pt>
 File: figures/mir_esi_errors.png Graphic file (type png)
 <use figures/mir_esi_errors.png>
-Package pdftex.def Info: figures/mir_esi_errors.png  used on input line 42.
+Package pdftex.def Info: figures/mir_esi_errors.png  used on input line 47.
 (pdftex.def)             Requested size: 245.71811pt x 113.10245pt.
 <figures/sim_setup.png, id=28, 723.70375pt x 721.69624pt>
 File: figures/sim_setup.png Graphic file (type png)
 <use figures/sim_setup.png>
-Package pdftex.def Info: figures/sim_setup.png  used on input line 49.
+Package pdftex.def Info: figures/sim_setup.png  used on input line 54.
 (pdftex.def)             Requested size: 245.71811pt x 245.0321pt.
-
-Underfull \vbox (badness 1205) has occurred while \output is active []
-
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 68.
+ [4 <./figures/mir_esi_errors.png> <./figures/sim_setup.png>]
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 73.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 68--74
+Underfull \hbox (badness 10000) in paragraph at lines 84--87
 
  []
 
-[4 <./figures/mir_esi_errors.png> <./figures/sim_setup.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 84--86
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--100
 
  []
 
 <figures/sim_results_alpha.png, id=34, 1443.2319pt x 453.1329pt>
 File: figures/sim_results_alpha.png Graphic file (type png)
 <use figures/sim_results_alpha.png>
-Package pdftex.def Info: figures/sim_results_alpha.png  used on input line 101.
+Package pdftex.def Info: figures/sim_results_alpha.png  used on input line 115.
 (pdftex.def)             Requested size: 245.71811pt x 77.1422pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 <figures/schur_img_1.png, id=35, 3485.02pt x 1872.9975pt>
 File: figures/schur_img_1.png Graphic file (type png)
 <use figures/schur_img_1.png>
-Package pdftex.def Info: figures/schur_img_1.png  used on input line 154.
+Package pdftex.def Info: figures/schur_img_1.png  used on input line 168.
 (pdftex.def)             Requested size: 245.71811pt x 132.03777pt.
 [5 <./figures/sim_results_alpha.png>]
 <figures/heatmap.png, id=40, 1984.41376pt x 1162.3425pt>
 File: figures/heatmap.png Graphic file (type png)
 <use figures/heatmap.png>
-Package pdftex.def Info: figures/heatmap.png  used on input line 170.
+Package pdftex.def Info: figures/heatmap.png  used on input line 184.
 (pdftex.def)             Requested size: 245.71811pt x 143.90906pt.
-) (./text/conclusions.tex) (./text/limitations_and_future_work.tex) (./text/appendix.tex) [6 <./figures/schur_img_1.png> <./figures/heatmap.png>] (./text/references.tex)
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ (./text/conclusions.tex) (./text/limitations_and_future_work.tex) (./text/appendix.tex) [6 <./figures/schur_img_1.png> <./figures/heatmap.png>] (./text/references.tex)
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -610,13 +610,13 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  8757 strings out of 478287
  131652 string characters out of 5849289
- 426098 words of memory out of 5000000
+ 425098 words of memory out of 5000000
  26740 multiletter control sequences out of 15000+600000
  544927 words of font info for 181 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,10n,62p,554b,382s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/NewTXMI5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txsys.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/ztmr.pfb>
-Output written on root.pdf (7 pages, 15027867 bytes).
+Output written on root.pdf (7 pages, 15031082 bytes).
 PDF statistics:
  103 PDF objects out of 1000 (max. 8388607)
  57 compressed objects within 1 object stream
