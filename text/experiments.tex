@@ -1,16 +1,22 @@
 % ================================ INTRO ====================================
-Overall experiment intro text (Sim and real)
+In order to examine the method, two experiments are performed; one in a simulated environment, and one with a real robot in a real industrial environment.
+The experiments are designed to test the following:
+
+\begin{itemize}
+\item To what degree the ESI is a true measure of the MED.
+\item How strong is the correlation between ESI and the performance of AMCL.
+\item How can the ESI be used actively to reduce the pose error of AMCL.
+\item That the ESI is applicable and useful in the real world, and how it can be used to generate a detailed heatmap of local MED's.
+\end{itemize}
+
 % ------------------------ SIMULATION EXPERIMENT ------------------------
 \subsection{Simulation experiment}
-Sim intro text, ...
-
-%          --------- SIMULATION GENERAL SETUP --------
-\textbf{Simulation general setup: }
 The simulator used is Nvidia Isaac Sim v5.0. The robot stack runs on a separate docker container, and communicates with the simulator via ROS2 (humble).
 The map is 50x50m, and contains 9 waypoints in a grid pattern. The direct pathways between waypoints are considered free space - obstacles are allowed
 to be placed in the remaining space, as seen in Figure X (red polygons). The experiment will consist of 30 individual runs. In each run,
 20 boxes will spawn at random places with random orientations on the obstacle space. An occupancy grid map is then generated and used by the stack, which
-runs the default AMCL of Nav2 (ref). The robot will move randomly between waypoints, with random odometry noise added. While it moves, every fourth second, a randomly chosen box
+runs the default AMCL of Nav2 (ref). The robot will move randomly between waypoints, with random odometry noise added to the published odometry. 
+While it moves, every fourth second, a randomly chosen box
 is moved (teleported) to a new random position in the obstacle space. This continues until all boxes have been moved. Then they are moved 
 back into their original positions one by one, also every fourth second. The test ends when the last box is back in place. This recreates a scenario
 where the robot moves from a known to an unknown area, and then back again, meaning that in the middle of the test, the map-environment differences 
@@ -23,29 +29,25 @@ MIRA=\dfrac{U}{U+2M}
 where $U$ is the number of unmoved boxes, and $M$ is the number of moved boxes. M is scaled by 2 because a moved box
 accounts for the same change as an added plus a removed box. 
 It is published as a ROS2 topic, and serves as a ground truth to evaluate how closely the ESI reflects the changes. 
-Each run will be performed twice. One with the default AMCL parameters, and one where the ESI is used to dynamically tune the $\alpha$-parameters of AMCL. \newline
-
-\begin{figure}[t]
-    \centerline{\includegraphics[width=\columnwidth]{figures/sim_setup.png}}
-    \caption{Scene from Isaac Sim. Red polygons represent the obstacle space. Waypoints are marked with purple squares. The robot is seen moving from top left to center.}
-    \label{fig5}
-\end{figure}
-
-
-%          --------- HYPOTHESIS 1: ESI Validity and AMCL Performance --------
-
+Each run will be performed twice. One with the default AMCL parameters, and one where the ESI is used to dynamically tune the $\alpha$-parameters of AMCL, which 
+determine the magnitude of the noise added in the motion update step. %          --------- HYPOTHESIS 1: ESI Validity and AMCL Performance --------
 \subsubsection{\textbf{Hypothesis 1: ESI Validity and AMCL Performance}} 
 We hypothesize that: \newline
 \textbf{1a)} The magnitude of the pose error of AMCL will not increase significantly when the level of map-environment divergence changes from low to moderate.\newline
 \textbf{1b)} Given a correct initial pose, and that the map-environment divergence remains low to moderate, the ESI will be able to accurately reflect the level of divergence.
-
 To test this, we will analyze the relationship between the MIRA, ESI and the pose and yaw errors of AMCL, which is illustrated in Figure X. 
 
-\begin{figure}[H]
+\begin{figure}[t]
     \centerline{\includegraphics[width=\columnwidth]{figures/mir_esi_errors.png}}
     \caption{Top: ESI vs map integrity ratio for default AMCL. Red = Ground truth (MIRA). 
     Bottom left: Position error. Bottom right: Yaw error. Black = interpolated mean of the ESI, position error and yaw error, respectively.}
     \label{fig4}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centerline{\includegraphics[width=\columnwidth]{figures/sim_setup.png}}
+    \caption{Scene from Isaac Sim. Red polygons represent the obstacle space. Waypoints are marked with purple squares. The robot is seen moving from top left to center.}
+    \label{fig5}
 \end{figure}
 
 \textbf{Results:} The ESI scores for the individual runs and their interpolated mean (black) are shown in Figure X (top), 
