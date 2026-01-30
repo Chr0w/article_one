@@ -30,11 +30,12 @@ where $U$ is the number of unmoved boxes, and $M$ is the number of moved boxes. 
 accounts for the same change as an added plus a removed box. 
 It is published as a ROS2 topic, and serves as a ground truth to evaluate how closely the ESI reflects the changes. 
 Each run will be performed twice. One with the default AMCL parameters, and one where the ESI is used to dynamically tune the $\alpha$-parameters of AMCL, which 
-determine the magnitude of the noise added in the motion update step. %          --------- HYPOTHESIS 1: ESI Validity and AMCL Performance --------
+determine the magnitude of the noise added in the motion update step. 
+%          --------- HYPOTHESIS 1: ESI Validity and AMCL Performance --------
 \subsubsection{\textbf{Hypothesis 1: ESI Validity and AMCL Performance}} 
 We hypothesize that: \newline
-\textbf{1a)} The magnitude of the pose error of AMCL will not increase significantly when the level of map-environment divergence changes from low to moderate.\newline
-\textbf{1b)} Given a correct initial pose, and that the map-environment divergence remains low to moderate, the ESI will be able to accurately reflect the level of divergence.
+\textbf{1a)} There is no significant difference in the magnitude of the pose (position?) error of AMCL while operating in an environment with no, light or moderate changes.\newline
+\textbf{1b)} Given a correct initial pose, and that the map-environment divergence remains below moderate, the ESI will be able to accurately reflect the level of divergence.
 To test this, we will analyze the relationship between the MIRA, ESI and the pose and yaw errors of AMCL, which is illustrated in Figure X. 
 
 \begin{figure}[t]
@@ -71,20 +72,17 @@ This shows that, \textit{as long as the map and environment are at least 21-27\%
 It also shows that, \textit{given the robot is well localized, as long as the ESI is kept above 0.27, we can expect it to be an accurate estimate of the map-environment difference.}
 However, there will be scenarios where AMCL has diverged, even with high ESI scores, due to other factors such as map symmetry, lack of features, hallway areas, etc. \newline
 
-%          --------- HYPOTHESIS 2: ESI AS PREDICTOR OF DIVERGENCE --------
-\subsubsection{\textbf{Hypothesis 2: ESI as predictor of divergence}}
-We hypothesize that the ESI can be used to calculate the probability that AMCL has diverged, and that the probability 
-of being lost at time t can be modeled by an exponential decay function $e$ as:
-\begin{equation}
-p_{lost}(t)=\sum_{i=0}^t \left[a*e^{-b*ESI(t)+c}-d\right]
-\end{equation}
-where $a, b, c$ and $d$ adjustable parameters, and being lost is defined as the absolute position error $E > 0.5m$. 
-To obtain the training and validation data sets, we load the first 60\% of all runs. The last 40\% is discarded, because from this point, 
-we can no longer trust the value of the ESI, as AMCL will likely have diverged. From this, for each set, we obtain 100 subsamples of 20 seconds each,
-with their starting time randomly chosen. Each subsample s is marked as lost or not lost, based on E:
-For any $t$, if $E(t) > 0.5m$, mark as lost. The training data will be balanced to 50\% lost, and the validation data will be unbalanced with 5\% lost 
-better reflect a real distribution. A simple random optimization was performed to obtain the following parameters on the trainig data: 
-$a=0.3$, $b=4.0$, $c=-2.0$ and $d=0.05$. On the validation set, these parameters yielded the following results:
+%          --------- HYPOTHESIS 2: CORRELATION BETWEEN ESI AND POSE ERROR --------
+\subsubsection{\textbf{Hypothesis 2: Correlation between ESI and pose error}}
+We hypothessize that there is a strong correlation between the observed ESI and the pose RMSE of default AMCL. 
+To test this, we sample the first 60\% (~90 seconds) of all 30 runs. The remaining 40\% is ommited, because as observed, from this point on, 
+the ESI can no longer be trusted to accurately reflect the MIRA, due to the high pose error. 
+The runs are then time synchronized, and for each time step, we generate a sample point with two values: The mean ESI and the mean pose RMSE for that time
+across all 30 runs. This results in 5662 pairs of data points, which can be seen in Figure X. As observed in both figure X (this) and Y (esi vs mira), 
+we do not expect a linear correlation. Therefore, we perform a Spearman's rank correlation test, with null-hypothesis significance level $\alpha=0.001$.
+
+\textbf{Results:} The correlation coefficient is $\rho = -0.83998$ with a p-value of $p=0.00000$ (arithmetic underflow). 
+This shows that there is a strong negative correlation between the mean ESI score and pose RMSE across all runs. (footnote to raw data?) \newline
 
 
 %          --------- HYPOTHESIS 3: ESI FOR TUNING AMCL PARAMETERS --------
@@ -96,7 +94,7 @@ But if some of the particles on the edge of the cloud, where the accumulated ran
 (false positives), the filter will quickly converge to that wrong pose, and then be unable to recover. By using the ESI to limit this expansion, 
 this risk is reduced. Essentially, AMCL now places more trust in the odometry, because the ESI indicates that the laser data can no longer be trusted. 
 When (if) the environment slowly begins to match the map again, the ESI will rise, returning the filter to its default level of exploration. 
-The two runs are analyzed and compared. Finally, the results are used to develop a method for using the ESI to predict when AMCL will diverge.   
+The two runs are analyzed and compared. 
 
 \textbf{Results}
 \begin{figure}[t]
@@ -112,9 +110,6 @@ Although it does not completely prevent divergence, it is still a significant im
 
 % ------------------------ REAL-WORLD EXPERIMENT ------------------------
 \subsection{Real-world experiment} 
-Real world intro text
-%          --------- REAL-WORLD GENERAL SETUP --------
-\textbf{Real-world general setup}
 To demonstrate that the ESI can be applied in the real world, and that it can be used to visualize changes in it, we used a MiR100 AMR as the platform.
 It has two SICK S300 safety rated 2D Lidar sensors that scans in a horizontal plane 20cm above the ground, with a 360 degree field of view and a max range of 30m.
 The venue is the production hall of a packaging and labeling company. It was chosen because it represents the type of environment where AMCL often struggles;
