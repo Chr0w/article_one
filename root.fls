@@ -765,11 +765,17 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8c.tfm
+INPUT ./figures/mira_error_bin_bar.png
+INPUT ./figures/mira_error_bin_bar.png
+INPUT figures/mira_error_bin_bar.png
+INPUT ./figures/mira_error_bin_bar.png
+INPUT ./figures/mira_error_bin_bar.png
 INPUT ./figures/sim_results_alpha.png
 INPUT ./figures/sim_results_alpha.png
 INPUT figures/sim_results_alpha.png
 INPUT ./figures/sim_results_alpha.png
 INPUT ./figures/sim_results_alpha.png
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmr8c.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmrc7t.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8c.tfm
 INPUT ./figures/schur_img_1.png
@@ -777,7 +783,6 @@ INPUT ./figures/schur_img_1.png
 INPUT figures/schur_img_1.png
 INPUT ./figures/schur_img_1.png
 INPUT ./figures/schur_img_1.png
-INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmr8c.vf
 INPUT ./figures/heatmap.png
 INPUT ./figures/heatmap.png
 INPUT figures/heatmap.png

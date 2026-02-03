@@ -1,13 +1,13 @@
 An indoor environment that often changes it's layout has long been a major challenge in terms of reliable localization for Autonomous Mobile Robots (AMR's) (ref). 
 Being able to localize is a fundamental ability required to perform any kind of autonomous task (ref), and this can be greatly compromized when objects are 
-no longer where the robot expects them to be (ref). Particle filters such as Adaptive Monte-Carlo Localization (AMCL) have loong been the gold standard (ref) within the 
+no longer where the robot expects them to be (ref). Particle filters such as Adaptive Monte-Carlo Localization (AMCL) have long been the gold standard (ref) within the 
 industry, due to its robustness to minor Map-Environment Differences (MED's) and sensor noise, and its low computational complexity. Although AMCL is 
 reliable in many cases, it assumes the world is static, and does not update the map over time. If the MED becomes too great, it will eventually diverge and fail (ref).
 Other methods such as Simultaneous Localization and Mapping (SLAM) variations do have continuous mapping capabilities, 
 but they too are succeptible to changes (ref). All it takes to corrupt the map is one wrong data association, and once enough errors have accumulated, 
 the map becomes effectively useless, which is why SLAM suffers in long-term reliability. A possible solution is to modify the infrastructure by adding
 i.e. beacons (ref) or fiducial markers (ref), but this is not always an option; and even if it was, it may be too expensive and/or time consuming to be considered.
-Seeing as changes made to the environment compared to the robot's reference is fundamental issue, it stands to reason that many AMR's would
+Seeing as changes made to the environment compared to the robot's reference is a fundamental issue, it stands to reason that many AMR's would
 benefit greatly if they were able to detect and quantify this difference. 
 However; to the best of our knowledge, no such metric exists. These are the contributions of this paper:
 
