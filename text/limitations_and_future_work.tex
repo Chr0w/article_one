@@ -1,1 +1,5 @@
 ...
+
+- Apply weights to cells based on how many times they have been observed (recursive moving average) -> ignore cells with low weights -> filter noise and fast-changing cells. 
+It also allows us to distinguish between observed and unobserved cells. 
+Use for path-planning - prefer paths with high ESI, both to reduce pose error, and to avoid being blocked by obstacles and interferring with site processes. 
