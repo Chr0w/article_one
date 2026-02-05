@@ -1,15 +1,15 @@
 An indoor environment that often changes it's layout has long been a major challenge in terms of reliable localization for Autonomous Mobile Robots (AMR's) (ref). 
-Being able to localize is a fundamental ability required to perform any kind of autonomous task (ref), and this can be greatly compromized when objects are 
+Being able to localize is a fundamental ability(ref), and this can be greatly compromized when objects are 
 no longer where the robot expects them to be (ref). Particle filters such as Adaptive Monte-Carlo Localization (AMCL) have long been the gold standard (ref) within the 
-industry, due to its robustness to minor Map-Environment Differences (MED's) and sensor noise, and its low computational complexity. Although AMCL is 
-reliable in many cases, it assumes the world is static, and does not update the map over time. If the MED becomes too great, it will eventually diverge and fail (ref).
+industry, due to its robustness to minor Map-Environment Differences (MEDs) and sensor noise, and its low computational complexity in 2D. Although AMCL is 
+reliable in many cases, it assumes the world is static. If the MEDs becomes too great, it will eventually diverge and fail (ref).
 Other methods such as Simultaneous Localization and Mapping (SLAM) variations do have continuous mapping capabilities, 
 but they too are succeptible to changes (ref). All it takes to corrupt the map is one wrong data association, and once enough errors have accumulated, 
 the map becomes effectively useless, which is why SLAM suffers in long-term reliability. A possible solution is to modify the infrastructure by adding
-i.e. beacons (ref) or fiducial markers (ref), but this is not always an option; and even if it was, it may be too expensive and/or time consuming to be considered.
-Seeing as changes made to the environment compared to the robot's reference is a fundamental issue, it stands to reason that many AMR's would
+beacons (ref) or fiducial markers (ref), but this is not always an option.
+Seeing as unmapped changes to the environment is a fundamental issue, it stands to reason that many AMR's would
 benefit greatly if they were able to detect and quantify this difference. 
-However; to the best of our knowledge, no such metric exists. These are the contributions of this paper:
+However, to the best of our knowledge, no such metric exists. The contributions of this paper are as follows:
 
 We propose the \textbf{Environment Similarity Index} (ESI): An index that quantifies how well the currently observed environment matches the map.
 First, we will use a simulation to show that the ESI is a reliable measure of the true MED, and assess their correlation.
@@ -17,7 +17,7 @@ Then we will show that there is a clear correlation between the observed ESI sco
 In addition, we will show how the ESI can be used actively to to improve AMCL's performance by dynamically adjusting it's parameters.
 Finally, we will also demonstrate that the ESI can be calculated on real-world data in a real industrial facility, and show how
 it can be used to generate a detailed heatmap of the site that can be used for a multitude of purposes, such as identification of
-hard-to-localize areas, and detection and tracking of site activities. The real-world data will also be used to confirm that the ESI
+hard-to-localize areas, and detection and tracking of site activities. The real-world data will also be used to support the claim that the ESI
 is truly a measure of the MED, and is not significantly affected by pose errors caused by changes in the environment, as long as
 these remain below a certain level.
 

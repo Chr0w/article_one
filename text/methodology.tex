@@ -1,19 +1,18 @@
-This section describes how changes in the environment are defined, and how they are used to calculate the ESI.
 \subsection{Changes}
 The difference that is measured is defined as a \textit{change in how the robot perceives its environment}. The change is measured against the map the robot has of said environment. 
-This is an important definition, with three major aspects. The first is that there can be a lot of changes to an environment, but if the robot does not sense it, then the changes 
-by definition have no impact on the robot's ability to localize itself. 
-The second is that it makes the index agnostic to which localization method is used, and which sensor modalities are available. A difference in observed visual features (I.e. SIFT) 
-can be used just as well as geometric lidar, radar or sonar points, both 2D and 3D. The third is that changes that \textit{could} be sensed but aren't, should not affect the index. 
-Changes that happen outside the sensor coverage can naturally not be detected, and so they have no effect on localization. Unseen changes may also change back to the initial state 
-before they are even noticed. The metric should as mentioned apply to any kind of sensors used, but since MiR robots localize via 2D Lidar, this will be the sensor modality used 
-from here on. The reference map could likewise be of any kind (graph based, geometry based, grid based, etc), but for this project, the (occupancy) grid-based map is selected. 
+This is an important definition, with three major aspects. The first is that the robot's ability to localize is only affected by changes that it is able to sense.
+The second is that it makes the ESI agnostic to the sensor modality, data dimension and what localization method is used. 
+Since this project is a collaboration with Teradyne Robotics, a 2D lidar will be the sensor modality used from here on, as these are used exclusively by their robots for localization.
+The third is that only changes within the sensor's coverage are considered; 
+changes that happen outside the sensor coverage have no effect on localization. 
+The reference map could likewise be of any kind (graph based, geometry based, grid based, etc), but for this project, the occupancy grid map is used. 
 
 Any physical object can result in a change in the environment by being either removed, added, moved, deformed or alter how it interacts with the sensor. 
 However, this can be simplified to just Removed and Added. Any of the last three changes (moved, deformed, different sensor interaction) can be considered as a combination 
 of removing the original item, and adding in the new. The distinction makes no difference from the robots point of view. Finally, an object can be observed to be 
 exactly as expected - this will be denoted as Matched. There are many ways a sensor reading can be categorized as either of these, and the method chosen is by no means 
 the only viable option. 
+
 
 \subsection{The Environment Similarity Index (ESI)}
 The index is a ratio, based on the current pose estimate from the robots localization module - for this paper, AMCL. On every laser-scan callback, each ray point is evaluated: 

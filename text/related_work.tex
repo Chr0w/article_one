@@ -1,17 +1,25 @@
-\subsection{Impact of env. changes to localization ~ 50\%}
-\textbf{Lifelong SLAM }
-
-\textbf{AMCL (+ parameter tuning)}
-
-\textbf{Pose tracking (KF and ICP)}
 
 \subsection{Change detection ~ 50\%}
-\textbf{Distance metrics, Map to map and map to sensor comparison}
 
-Long-term_Localization_of_Mobile_Robots_in_Dynamic_Changing_Environments.pdf\newline
-For each beam in a laser scan, they calculate [[Z-scores and Mahalanobis distances|Mahalanobis distance]] $d_m$, which can be thought of as the observed range difference 
-(expected range vs measured) expressed as a fraction of the noise standard deviation. This is then converted to a weight w
-by $w = e^{(-d)}$ (small distance -> 1, large distance -> 0). The Matching degree is then the average weight for all beams in that scan. 
+The impact on localization performance caused by changes in the enviroment can be substantial. ABC found that ... examples ... In order to detect changes, the robot(s) must
+continually scan the environment for new information.
+When comparing sensor data to a reference map $M_{ref}$, a standard approach is to use a model that returns the probability of seeing the current data, given a pose and $M_{ref}$.
+This is typically computed by finding the distance d of a laser point $lp$ to its closest match on the map, and then expressing it as a fraction of the noise standard deviation $\sigma$.
+This is negated and used in an exponential function to return a probability $p \in [1,0]$ for all points, sometimes denoted as a weight w.
+\cite{b1} Calculates a "matching degree" by finding the average weight for all beams in that scan. 
+The default Likelihood-field sensor model of AMCL \cite{b2} takes the product of all weights without any normalization to return the relative matching degree between the particles. 
+\cite{b3} use $exp(-\sum_{lp}\frac{min(d^2,T)}{\sigma^2})$ with some threshold distance T to return a matching degree. They are all valid models to determine the match
+between sensor data and $M_{ref}$, but they fail to account for removed items; if the beam hits a mapped obstacle behind it, that is simply used, and if it hits
+nothing, it is discarded. They also provide no geometric information about any potentially added items - this info is also lost.
+To detect such added and removed items, a map to map comparison is often used. \cite{b4} use image registration techniques to register $M_{ref}$ and a newly recorded map.
+For each pixel in $M_{ref}$, they use KNN (k=1) to find the nearest neighbor (NN) occupied pixel in the recorded map,
+and then sum up all the distances and divides it by the number of occupied pixels in $M_{ref}$, to get an average distance metric. \cite{b5} measures what they call
+the Image Similarity metric: For each pixel in $M_{ref}$, compute the summed Manhattan distance to the nearest pixel of the same value in the new map. 
+Then compute the same distance from the new map to $M_{ref}$, and sum the two. This approach accounts for the fact that those two distances may differ greatly. 
+\cite{b6} compares two maps by a combination of registration and post-processing to perform a binary segmentation of the objects of interest. 
+Then they find the Intersection over Union (IoU) between them in order to detect added, removed and matches, along with their match degree. 
 
-The weight w is the same weight calculated by AMCL in the default Likelihood-field sensor model mode. 
-The difference is that AMCL takes the product of all weights without any normalization. 
+\cite{b7} convert noisy 3D point clouds into a continuous density fields using Gaussian kernels to detect changes. 
+\cite{b8} measure voxel value changes in a Truncated Signed Distance Field in order to detect added and removed surfaces. 
+
+There are other similar approaches (give 2 refs), but they all require that the sensor data has been converted to a map before the comparison.

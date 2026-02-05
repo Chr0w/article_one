@@ -17,14 +17,14 @@ to be placed in the remaining space, as seen in Figure X (red polygons). The exp
 20 boxes will spawn at random places with random orientations on the obstacle space. An occupancy grid map is then generated and used by the stack, which
 runs the default AMCL of Nav2 (ref). The robot will move randomly between waypoints, with random odometry noise added to the published odometry. 
 While it moves, every fourth second, a randomly chosen box
-is moved (teleported) to a new random position in the obstacle space. This continues until all boxes have been moved. Then they are moved 
+is moved to a new random position in the obstacle space. This continues until all boxes have been moved. Then they are moved 
 back into their original positions one by one, also every fourth second. The test ends when the last box is back in place. This recreates a scenario
 where the robot moves from a known to an unknown area, and then back again, meaning that in the middle of the test, the map-environment differences 
 are at their highest, as none of the boxes are at their original positions. This is to capture not only when AMCL diverges, 
-but also to see if it is able to recover. The robot has a single 360deg FoW 2D laser scanner with a max range of 30m. As such, it cannot cover the entire map 
-from any one position. The "true" state of the environment is denoted Map Integrity Ratio (MIRA) and is calculated as 
+but also to see if it is able to recover. The robot has a single 360$\degree$ field of view 2D laser scanner with a max range of 30m. As such, it cannot cover the entire map 
+from any one position. The "true" state of the environment is denoted Map Integrity Ratio (MIRa) and is calculated as 
 \begin{equation}
-    MIRA=\dfrac{U}{U+2M}
+    MIRa=\dfrac{U}{U+2M}
 \end{equation} 
 where $U$ is the number of unmoved boxes, and $M$ is the number of moved boxes. M is scaled by 2 because a moved box
 accounts for the same change as an added plus a removed box. 
@@ -34,21 +34,21 @@ determine the magnitude of the noise added in the motion update step.
 %          --------- HYPOTHESIS 1: ESI Validity and AMCL Performance --------
 \subsubsection{\textbf{Hypothesis 1: ESI Validity and AMCL Performance}} 
 We hypothesize that: \newline
-\textbf{1a)} In the MIRA range of 1 to 0, the differences in the absolute pose error of AMCL is negligible for the majority of the range.\newline
-\textbf{1b)} Given a correct initial pose, and that the MIRA remains moderate or below, the ESI will be able to accurately reflect the true level of divergence.\newline
+\textbf{1a)} In the MIRa range of 1 to 0, the differences in the absolute pose error of AMCL is negligible for the majority of the range.\newline
+\textbf{1b)} Given a correct initial pose, and that the MIRa remains moderate or below, the ESI will be able to accurately reflect the true level of divergence.\newline
 % To test this, we will analyze 
-First we plot the relationship between the MIRA, ESI and the pose and yaw errors of AMCL for 100\% of the data to understand the patterns.
-Then we will load the first 50\% of all runs to ensure that the pose errors for an entry is unaffected by any previous time instance where the MIRA and ESI score were lower. 
-To test 1a, we sort all entries into 10 bins based on their MIRA value. Then we plot the mean pose error for each group, see figure X, and evaluate the findings. 
-To test 1b, we will perform a Spearman's rank correlation test on the ESI and the MIRA to determine if there is a strong correlation.
+First we plot the relationship between the MIRa, ESI and the pose and yaw errors of AMCL for 100\% of the data to understand the patterns.
+Then we will load the first 50\% of all runs to ensure that the pose errors for an entry is unaffected by any previous time instance where the MIRa and ESI score were lower. 
+To test 1a, we sort all entries into 10 bins based on their MIRa value. Then we plot the mean pose error for each group, see figure X, and evaluate the findings. 
+To test 1b, we will perform a Spearman's rank correlation test on the ESI and the MIRa to determine if there is a strong correlation.
 
 
 \begin{figure}[t]
     \centerline{\includegraphics[width=\columnwidth]{figures/mir_esi_errors.png}}
-    \caption{Top: ESI vs MIRA for default AMCL. Red = Ground truth (MIRA). 
+    \caption{Top: ESI vs MIRa for default AMCL. Red = Ground truth (MIRa). 
     Bottom left: Position error. Bottom right: Yaw error. Black = interpolated mean of the ESI, position error and yaw error, respectively.}
     \label{fig4}
-\end{figure} % Fix Y label to MIRA
+\end{figure} % Fix Y label to MIRa
 
 \begin{figure}[htbp]
     \centerline{\includegraphics[width=\columnwidth]{figures/sim_setup.png}}
@@ -57,28 +57,27 @@ To test 1b, we will perform a Spearman's rank correlation test on the ESI and th
 \end{figure}
 
 \textbf{Results:} The ESI scores for the individual runs and their interpolated mean (black) are shown in Figure X (top), 
-along with the ground truth MIRA value (red). The absolute position and yaw errors are also shown (bottom left and right).
-In general, the scores follow the MIRA closely in the first half of the test. The general pattern and stepwise changes is clearly reflected in the mean, 
+along with the ground truth MIRa value (red). The absolute position and yaw errors are also shown (bottom left and right).
+In general, the scores follow the MIRa closely in the first half of the test. The general pattern and stepwise changes is clearly reflected in the mean, 
 with no visible time delay. 
 In the beginning, since the ESI can never be more than 1, the mean is slighly below the true value. It then follows it very closely, and after about 15 seconds, 
-the ESI rises slightly above the MIRA, which persists until just before half way through the test. Since the robot cannot observe the entire map all the time, 
-this difference is expected: 
-On average, there will be changes outside the range of the laser, which means that, since the environment state is only declining, the true state of the environment 
-can only be as bad or worse than what the robot can detect. 
-When MIRA reaches zero, the ESI is still above it, even though the map and environment are now completely different. This is caused by false positive matches
+the ESI rises slightly above the MIRa, which persists until just before half way through the test. Since the robot cannot observe the entire map all the time, 
+this difference is expected. On average, there will be changes outside the range of the laser, which means that, since the environment state is only declining, 
+the true state of the environment can only be as bad or worse than what the robot can detect. 
+When MIRa reaches zero, the ESI is still above it, even though the map and environment are now completely different. This is caused by false positive matches
 and missed removed objects that results from the rising pose error, and because when a box is moved, it may randomly be placed such that it 
 overlaps with the initial (mapped) position of another box, thus contributing to a match, also as a false positive. 
 After this, the pose errors become too great, and the ESI can no longer be trusted. 
 
-Up until the 50s mark, both position and yaw error is kept low, with mean values of 0.1m and 0.57°, respectively. Yaw does exhibit some spikes to around 10 degrees,
-but they are quickly corrected. At this point, the ESI is about 0.27 (MIRA = 0.21). After this, they both start to increase rapidly. 
+Up until the 50s mark, both position and yaw error is kept low, with mean values of 0.1m and 0.57°, respectively. Yaw does exhibit some spikes to around 10$\degree$,
+but they are quickly corrected. At this point, the ESI is about 0.27 (MIRa = 0.21). After this, they both start to increase rapidly. 
 
 \textbf{1a results}\newline
 TODO, but clearly negligible until the 0.3-0.4 bin. 
 
 \begin{figure}[htbp]
     \centerline{\includegraphics[width=\columnwidth]{figures/mira_error_bin_bar.png}}
-    \caption{Balanced (N=12602 in each bin) bar plot of mean position and yaw error for each MIRA bin.}
+    \caption{Balanced (N=12602 in each bin) bar plot of mean position and yaw error for each MIRa bin.}
     \label{fig5}
 \end{figure}
 
@@ -95,14 +94,15 @@ However, there will be scenarios where AMCL has diverged, even with high ESI sco
 \subsubsection{\textbf{Hypothesis 2: Correlation between ESI and pose error}}
 We hypothessize that there is a strong correlation between the observed ESI and the pose RMSE of default AMCL. 
 To test this, we sample the first 60\% (~90 seconds) of all 30 runs. The remaining 40\% is ommited, because as observed, from this point on, 
-the ESI can no longer be trusted to accurately reflect the MIRA, due to the high pose error. 
+the ESI can no longer be trusted to accurately reflect the MIRa, due to the high pose error. 
 The runs are then time synchronized, and for each time step, we generate a sample point with two values: The mean ESI and the mean pose RMSE for that time
-across all 30 runs. This results in 5662 pairs of data points, which can be seen in Figure X. As observed in both figure X (this) and Y (esi vs MIRA), 
+across all 30 runs. This results in 5662 pairs of data points, which can be seen in Figure X. As observed in both figure X (this) and Y (esi vs MIRa), 
 we do not expect a linear correlation, and the data is not normally distributed. 
 Therefore, we perform a Spearman's rank correlation test, with null-hypothesis significance level $\alpha=0.001$.
 
 \textbf{Results:} The correlation coefficient is $\rho = -0.83998$ with a p-value of $p=0.00000$ (arithmetic underflow). 
-This shows that there is a very strong negative correlation between the mean ESI score and pose RMSE across all runs. (footnote to raw data?) \newline
+This shows that there is a very strong negative correlation between the mean ESI score and pose RMSE across all runs: 
+When the ESI rises, the pose RMSE falls, and vice versa.
 
 
 %          --------- HYPOTHESIS 3: ESI FOR TUNING AMCL PARAMETERS --------
@@ -131,7 +131,7 @@ Although it does not completely prevent divergence, it is still a significant im
 % ------------------------ REAL-WORLD EXPERIMENT ------------------------
 \subsection{Real-world experiment} 
 To demonstrate that the ESI can be applied in the real world, and that it can be used to visualize changes in it, we used a MiR100 AMR as the platform.
-It has two SICK S300 safety rated 2D Lidar sensors that scans in a horizontal plane 20cm above the ground, with a 360 degree field of view and a max range of 30m.
+It has two SICK S300 safety rated 2D Lidar sensors that scans in a horizontal plane 20cm above the ground, with a 360$\degree$ field of view and a max range of 30m.
 The venue is the production hall of a packaging and labeling company. It was chosen because it represents the type of environment where AMCL often struggles;
 it is constantly developing, and most of the time, the the majority of what the robot is able to see consists of transient objects, as seen in Figure X.
 A small section of the hall was mapped, using the native mapping functionality (based on ROS1 cartographer). Two waypoints, Start and Finish, were placed.
@@ -144,7 +144,12 @@ A Line-of-sight (LoS) check was implemented in order to reflect how readings on 
 
 %          --------- HYPOTHESIS 4: REAL-WORLD USEFULNESS and HEATMAP VISUALIZATION --------
 \subsubsection{\textbf{Hypothesis 4: Real-world usefulness and heatmap visualization}} 
-... based on the simulation tests, we expect there to be ...
+We hypothesize that there is no significant difference between the position error of AMCL in scenarios 1-3. 
+Therefore, we expect that the ESI can be used to generate a heatmap that accurately reflects the local differences between the map and the environment.
+The heatmap is generated using IDW as described, see figure X.
+As the sample size is small, and the error distribution is unknown, 
+we perform a non-parametric Kruskal-Wallis test to compare the ranks of the AMCL position errors for scenarios 1-3, 
+with null-hypothesis significance level $\alpha=0.001$.
 
 \subsubsection{\textbf{Results}}
 
@@ -175,16 +180,16 @@ A Line-of-sight (LoS) check was implemented in order to reflect how readings on 
     \caption{Photo of a MiR100 moving through the production hall towards the finish waypoint.}
     \label{fig2}
 \end{figure}
+
+
+\textbf{Results:}
 The test data reveals that a large percentage of the emitted rays are never returned, and so they report max range. This is why only those beams that return a value
 within min and max range are considered valid: A raytraced beam that reports max range due to attenuation would wrongly count all objects on the line as removed.
-
-To test the reliability of AMCL, a Levene's test of equality of variances on the position errors (Euclidean distance from goal) for scenarios 1-3 shows no significant 
-differences in variance ($p=0.8153$, center=median). 
-A one-way ANOVA test shows no significant differences in mean position error ($p=0.7046$). These tests show that, in this experiment, for no, light and moderate changes, 
+The heatmap clearly shows how the ESI reflects the intensity of local changes across the hall in the different scenarios. 
+Kruskal-Wallis test results: $H: 0.7363$, $p: 0.6920$. We thus retain the null hypothesis and conclude that, in this experiment, for no, light and moderate changes, 
 AMCL is able to consistently maintain a low pose error. However, when the changes became severe, AMCL failed in every run, and the robot was unable to reach the goal. 
 This corresponded with a low mean ESI score of 0.22 for scenario 4. 
 
-The heatmap clearly shows how the ESI reflects the intensity of local changes across the hall in the different scenarios. 
 
 \begin{figure}[H]
     \centerline{\includegraphics[width=\columnwidth]{figures/heatmap.png}}
